@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=IM+Fell+DW+Pica&display=swap');
+
+.game-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('../../../assets/img/background-home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loading-container {
+  font-family: 'Geologica', sans-serif;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .master-music {
+    color: #fff;
+    text-shadow: 0 7px 7px rgb(0, 0, 0), 0 20px 20px rgb(0, 0, 0);
+  }
+
+  i {
+    color: var(--brand-color);
+    text-shadow: 0 7px 7px rgb(0, 0, 0), 0 20px 20px rgb(0, 0, 0);
+    font-size: 8rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@keyframes lightningBlink {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.bi-lightning-charge-fill {
+  animation: lightningBlink 0.5s infinite;
+}
+
+.content {
+  color: #fff;
+  position: absolute;
+  background: rgba(42, 0, 61, 0.7);
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  font-family: 'Geologica', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  bottom: 1.5rem;
+  position: absolute;
+
+  i {
+    color: var(--brand-color);
+  }
+}
+
+.input-name {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.form-control-lg {
+  width: 350px;
+  box-shadow: none;
+  color: #333;
+}
+
+.form-control-lg:focus {
+  border: 2px solid var(--brand-color);
+}
+
+input {
+  border-radius: 0;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.difficult {
+  margin-top: 1rem;
+  justify-content: center;
+  text-align: center;
+
+  .difficult-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .radio-buttons {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      padding-left: 1.5rem;
+    }
+
+    .right {
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+.btn-outline-danger {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgba(0, 0, 0, 0.5);
+  --bs-btn-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ff0019;
+  --bs-btn-active-border-color: #ff0019;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+  --bs-btn-bg: #ff0019;
+}
+
+.btn-primary {
+  border: none;
+  padding: 8px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 0;
+  margin-top: 3rem;
+  background-color: var(--brand-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #2a003d;
+}
+
+.btn-primary:focus {
+  outline: none;
+}

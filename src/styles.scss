@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --brand-color: #8c00ff;
+  // --brand-color: #ead1ff;
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+
+.game-start {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('../../../assets/img/background-start.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes lightningBlink {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.content {
+  color: #fff;
+  position: absolute;
+  background: #23003fc7;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--brand-color);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.brand {
+  font-family: 'Geologica', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+
+  i {
+    color: var(--brand-color);
+  }
+}
+
+.player-music {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-player {
+  border-radius: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #414141d3, #181818c9);
+  border: 1px solid var(--brand-color);
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.info-player .player-name {
+  font-family: 'Geologica', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  max-width: 70%;
+}
+
+.info-player .player-points {
+  font-family: 'Geologica', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  max-width: 50%;
+}
+
+.info-music {
+  border-radius: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.info-music .play-music {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  max-width: 70%;
+  border: 1.5px solid var(--brand-color);
+  background: linear-gradient(to bottom, #414141ce, #181818b7);
+  height: 50px;
+}
+
+.info-music .account-points {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  max-width: 70%;
+  border: 1.5px solid var(--brand-color);
+  background: linear-gradient(to bottom, #414141ce, #181818b7);
+  height: 50px;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+audio {
+  width: 50%;
+  padding: 5px 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+}
+
+.audio-question {
+  font-family: 'Geologica', sans-serif;
+  width: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #ffd900;
+  span {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+
+  i {
+    color: var(--brand-color);
+  }
+}
+
+.response-band {
+  width: 100%;
+  margin: 0;
+}
+
+.card {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li .card:hover {
+  border: 1px solid #3f51b5;
+}
+
+ol {
+  padding: 0;
+}
+
+
+@media (max-width: 836px) {
+  .audio-question {
+    i {
+      display: none;
+    }
+  }
+}

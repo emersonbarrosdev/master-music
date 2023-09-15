@@ -1,0 +1,40 @@
+{
+    "questions": [
+        {
+            "questionText": "../assets/songs/CPM 22 - Um Minuto Para O Fim Do Mundo.mp3",
+            "options": [
+                {
+                    "text": "CPM 22",
+                    "correct": true
+                },
+                {
+                    "text": "Led Zeppelin"
+                },
+                {
+                    "text": "Pink Floyd"
+                },
+                {
+                    "text": "Aerosmith"
+                }
+            ]
+        },
+        {
+            "questionText": "../assets/songs/Bon Jovi - Have A Nice Day.mp3",
+            "options": [
+                {
+                    "text": "Alice In Chains"
+                },
+                {
+                    "text": "Rise Against"
+                },
+                {
+                    "text": "Placebo",
+                    "correct": true
+                },
+                {
+                    "text": "Muse"
+                }
+            ]
+        }
+    ]
+}

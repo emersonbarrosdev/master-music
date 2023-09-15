@@ -1,0 +1,71 @@
+<div class="game-start" *ngIf="!isQuizCompleted">
+  <div class="content">
+    <div class="brand">
+      <span>Master</span>
+      <i class="bi bi-lightning-charge-fill"></i>
+      <span>Music</span>
+    </div>
+    <div class="player-music" *ngIf="questionList.length">
+      <div class="info-player">
+        <div class="player-name">{{ playerName }}</div>
+        <div class="player-points">{{ points }} Ponto{{ points > 1 ? 's' : '' }}</div>
+      </div>
+      <div class="info-music">
+        <audio #audioElement controls autoplay [src]="questionList[currentQuestion].questionText"></audio>
+        <div class="account-points">{{ formatCounterValue(counter) }} seg</div>
+        <div class="play-music">{{ currentQuestion+1 }} / {{ questionList.length }}</div>
+      </div>
+      <div class="audio-question">
+        <i class="bi bi-lightning-charge-fill"></i>
+        <span>De quem é essa música?</span>
+        <i class="bi bi-lightning-charge-fill"></i>
+      </div>
+      <div class="response-band">
+        <ol *ngFor="let question of questionList[currentQuestion].options">
+          <li (click)="questionAnswer(currentQuestion+1, question)">
+            <div appIsCorrect [isCorrect]="question.correct" class="card">
+              {{ question.text }}
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------------------------------------------------------- -->
+
+<div class="container" *ngIf="isQuizCompleted">
+  <mat-card class="example-card example-card-finish">
+    <mat-card-content>
+      <h1 class="text-center">PARABÉNS!!!</h1>
+      <div class="row pt-3 text-center">
+        <div class="col-12">
+          <label class="col-form-label">Player:</label>
+          <span class="span-resp"> {{ playerName }}</span>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <label class="col-form-label">Acertou: </label>
+          <span class="span-resp"> {{ correctAnswer }}</span>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <label class="col-form-label">Errou:</label>
+          <span class="span-resp"> {{ inCorrectAnswer }}</span>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <label class="col-form-label">Pontos:</label>
+          <span class="span-resp"> {{ points }}</span>
+        </div>
+      </div>
+      <mat-card-actions class="justify-content-md-center pt-3">
+        <button mat-raised-button color="primary" (click)="init()">INÍCIO</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+</div>
