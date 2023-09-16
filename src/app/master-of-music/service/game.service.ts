@@ -16,6 +16,11 @@ export class GameService {
     return this.httpClient.get<any>(API);
   }
 
+  // getQuestionsByLevel(level: string) {
+  //   return this.httpClient.get(this.API) as any;
+  // }
+
+
   showError(msgError: string) {
     this.dialog.open(DialogComponent, {
       data: msgError

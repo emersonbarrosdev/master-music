@@ -1,49 +1,32 @@
-
 <div class="game-home">
   <div class="loading-container" *ngIf="showLoading; else gameContainer">
     <span class="master-music">Master</span>
     <i class="bi bi-lightning-charge-fill"></i>
     <span class="master-music">Music</span>
   </div>
-
   <ng-template #gameContainer>
     <div class="content">
-      <form [formGroup]="form">
-      <label class="input-name">DIGITE SEU NOME</label>
-      <input class="form-control form-control-lg" type="text" formControlName="name" required>
-
-      <!-- <div class="difficult">
-        <label class="difficult-name">Escolha uma dificuldade:</label>
-        <div class="radio-buttons">
-          <div class="right">
-            <input type="radio" class="btn-check" id="danger-1" autocomplete="off" [(ngModel)]="difficulty"
-              [value]="'beginner'" name="difficulty">
-            <label class="btn btn-outline-danger " for="danger-1">Iniciante</label>
-          </div>
-
-          <div>
-            <input type="radio" class="btn-check" id="danger-2" autocomplete="off" [(ngModel)]="difficulty"
-              [value]="'normal'" name="difficulty">
-            <label class="btn btn-outline-danger" for="danger-2">Normal</label>
-          </div>
-
-          <div class="left">
-            <input type="radio" class="btn-check" id="danger-3" autocomplete="off" [(ngModel)]="difficulty"
-              [value]="'master'" name="difficulty">
-            <label class="btn btn-outline-danger" for="danger-3">Mestre</label>
-          </div>
-        </div>
-      </div> -->
-
-      <button (click)="onStart()" class="btn btn-primary">START</button>
-    </form>
-
       <div class="brand">
         <span>Master</span>
-        <i class="bi bi-lightning-charge-fill"></i>
+        <i class="bi bi-lightning-charge-fill welcome-lightning"></i>
         <span>Music</span>
       </div>
+      <form [formGroup]="form">
+        <div class="input-container">
+          <input class="form-control form-control-lg" placeholder="DIGITE SEU NOME" type="text" formControlName="name"
+            required>
+        </div>
 
+        <mat-form-field>
+          <mat-label>Level</mat-label>
+          <mat-select formControlName="level" id="level" class="select" required>
+            <mat-option>--</mat-option>
+            <mat-option *ngFor="let level of levels" [value]="level.value">{{ level.label }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button (click)="onStart()" class="btn btn-primary">START</button>
+      </form>
     </div>
   </ng-template>
 </div>

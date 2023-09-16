@@ -8,14 +8,21 @@ import { GameService } from '../service/game.service';
   templateUrl: './game-welcome.component.html',
   styleUrls: ['./game-welcome.component.scss']
 })
+
 export class GameWelcomeComponent implements OnInit {
 
   form: FormGroup;
   showLoading: boolean = true;
-
+  animal = [];
   private router = inject(Router);
   private formBuilder = inject(FormBuilder);
   private gameService = inject(GameService);
+  levels: { value: string, label: string }[] = [
+    { value: 'easy', label: 'Fácil' },
+    { value: 'normal', label: 'Normal' },
+    { value: 'hard', label: 'Difícil' },
+    { value: 'master', label: 'Mestre' },
+  ];
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -27,7 +34,8 @@ export class GameWelcomeComponent implements OnInit {
 
   userForm() {
     this.form = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(3)]]
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      level: ['', ],
     })
   }
 
@@ -36,6 +44,8 @@ export class GameWelcomeComponent implements OnInit {
   }
 
   onStart() {
+    console.log(this.form);
+
     if (this.form.valid) {
       localStorage.setItem('name', this.getFormControl()['name'].value);
       this.router.navigate(['/game-start']);

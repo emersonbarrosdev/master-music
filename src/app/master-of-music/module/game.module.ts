@@ -18,6 +18,7 @@ import { DialogComponent } from '../dialog/dialog.component';
 import { GameStartComponent } from '../game-start/game-start.component';
 import { GameService } from '../service/game.service';
 import { GameWelcomeComponent } from '../game-welcome/game-welcome.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { GameWelcomeComponent } from '../game-welcome/game-welcome.component';
     HttpClientModule,
     MatDialogModule,
     MatListModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSelectModule
   ],
   providers: [GameService],
 })

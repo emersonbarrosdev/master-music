@@ -8,47 +8,24 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url('../../../assets/img/background-start.jpg');
+  background-image: url('../../../assets/img/background-start1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@keyframes lightningBlink {
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
 .content {
-  color: #fff;
   position: absolute;
-  background: #23003fc7;
-  width: 60%;
-  height: 100%;
+  background-image: linear-gradient(to bottom, #3b3b3bef, #131212ee);
+  padding: 20px;
+  width: 70%;
+  height: 90%;
   display: flex;
-  padding: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--brand-color);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
-  border-bottom: 0;
-  border-top: 0;
-}
-
-.brand {
-  font-family: 'Geologica', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-
-  i {
-    color: var(--brand-color);
-  }
+  border: 5px solid var(--first-yellow);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
 }
 
 .player-music {
@@ -68,8 +45,8 @@
   align-items: center;
   text-align: center;
   background: linear-gradient(to bottom, #414141d3, #181818c9);
-  border: 1px solid var(--brand-color);
-  height: 50px;
+  border: 1px solid var(--first-white);
+  height: 60px;
   margin-bottom: 1rem;
 }
 
@@ -82,8 +59,10 @@
   padding: 0 20px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: #fff;
   max-width: 70%;
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .info-player .player-points {
@@ -95,8 +74,14 @@
   padding: 0 20px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: #fff;
   max-width: 50%;
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
+
+  i {
+    margin-left: 10px;
+  }
 }
 
 .info-music {
@@ -116,9 +101,9 @@
   padding: 0 20px;
   font-weight: bold;
   font-size: 1rem;
-  color: #fff;
+  color: var(--first-white);
   max-width: 70%;
-  border: 1.5px solid var(--brand-color);
+  border: 1.5px solid var(--first-white);
   background: linear-gradient(to bottom, #414141ce, #181818b7);
   height: 50px;
 }
@@ -130,9 +115,9 @@
   padding: 0 20px;
   font-weight: bold;
   font-size: 1rem;
-  color: #fff;
+  color: var(--first-white);
   max-width: 70%;
-  border: 1.5px solid var(--brand-color);
+  border: 1.5px solid var(--first-white);
   background: linear-gradient(to bottom, #414141ce, #181818b7);
   height: 50px;
 }
@@ -158,21 +143,16 @@ audio {
 }
 
 .audio-question {
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Bungee', cursive;
   width: 70%;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem 0;
-  color: #ffd900;
-  span {
-    font-size: 1.3rem;
-    margin: 5px;
-  }
-
-  i {
-    color: var(--brand-color);
-  }
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
+  font-size: 2rem;
 }
 
 .response-band {

@@ -7,9 +7,21 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url('../../../assets/img/background-home.jpg');
+  background-image: url('../../../assets/img/background-home1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@keyframes logoZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .loading-container {
@@ -18,45 +30,67 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  text-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
+  animation: logoZoom 3s infinite alternate;
   .master-music {
-    color: #fff;
-    text-shadow: 0 7px 7px rgb(0, 0, 0), 0 20px 20px rgb(0, 0, 0);
+   color: var(--first-green);
   }
 
   i {
-    color: var(--brand-color);
-    text-shadow: 0 7px 7px rgb(0, 0, 0), 0 20px 20px rgb(0, 0, 0);
+    color: var(--first-yellow);
     font-size: 8rem;
     margin: 0 0.5rem;
   }
 }
 
-@keyframes lightningBlink {
-  100% {
+@keyframes lightningDescend {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  5% {
     opacity: 1;
   }
 
-  50% {
+  10% {
     opacity: 0;
+    transform: translateY(0);
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }
 
-.bi-lightning-charge-fill {
-  animation: lightningBlink 0.5s infinite;
+
+.welcome-lightning {
+  animation: lightningDescend 1s linear infinite;
 }
 
 .content {
-  color: #fff;
   position: absolute;
-  background: rgba(42, 0, 61, 0.7);
+  background-image: linear-gradient(to bottom, #3b3b3bef, #131212ee);
   padding: 20px;
   width: 70%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 5px solid var(--first-yellow);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
 }
 
 form {
@@ -68,20 +102,17 @@ form {
 }
 
 .brand {
-  font-family: 'Geologica', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  bottom: 1.5rem;
+  top: 6rem;
   position: absolute;
+  font-family: 'Geologica', sans-serif;
+  font-size: 1.5rem;
+  color: var(--first-green);
 
   i {
-    color: var(--brand-color);
+    background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
   }
-}
-
-.input-name {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
 }
 
 .form-control-lg {
@@ -90,79 +121,61 @@ form {
   color: #333;
 }
 
-.form-control-lg:focus {
-  border: 2px solid var(--brand-color);
+input {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  height: 56px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8) !important;
 }
 
-input {
-  border-radius: 0;
-  height: 40px;
-  text-align: center;
-  border: none;
+input:focus::placeholder {
+  color: #fff;
 }
 
 input::placeholder {
   font-size: 1rem;
   text-align: center;
-  color: #333;
+  color: #949494;
 }
 
-.difficult {
-  margin-top: 1rem;
-  justify-content: center;
-  text-align: center;
-
-  .difficult-name {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
+@keyframes buttonColorTransition {
+  0% {
+    color: var(--first-yellow);
   }
 
-  .radio-buttons {
-    display: flex;
-    flex-direction: row;
-
-    .left {
-      padding-left: 1.5rem;
-    }
-
-    .right {
-      padding-right: 1.5rem;
-    }
+  50% {
+    color: var(--first-orange);
   }
-}
 
-.btn-outline-danger {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: rgba(0, 0, 0, 0.5);
-  --bs-btn-border-color: #fff;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ff0019;
-  --bs-btn-active-border-color: #ff0019;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.btn-outline-danger:hover {
-  --bs-btn-bg: #ff0019;
+  100% {
+    color: var(--first-yellow);
+  }
 }
 
 .btn-primary {
-  border: none;
-  padding: 8px 25px;
-  font-size: 1.5rem;
+  bottom: 6rem;
+  position: absolute;
+  padding: 0;
+  font-family: 'Bungee', cursive;
+  font-size: 2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   text-transform: uppercase;
-  border-radius: 0;
-  margin-top: 3rem;
-  background-color: var(--brand-color);
-  color: #fff;
+  width: 150px;
+  background: none;
+  border: none;
+  color: var(--first-yellow);
+  animation: buttonColorTransition 4s infinite; /* Ajuste a duração conforme necessário */
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  color: #2a003d;
+  animation: none;
+  color: var(--first-white);
 }
 
 .btn-primary:focus {
   outline: none;
+  background: none;
+  animation: buttonColorTransition 4s infinite;
 }

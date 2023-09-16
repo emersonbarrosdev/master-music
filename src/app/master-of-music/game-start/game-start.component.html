@@ -1,25 +1,16 @@
 <div class="game-start" *ngIf="!isQuizCompleted">
   <div class="content">
-    <div class="brand">
-      <span>Master</span>
-      <i class="bi bi-lightning-charge-fill"></i>
-      <span>Music</span>
-    </div>
     <div class="player-music" *ngIf="questionList.length">
       <div class="info-player">
         <div class="player-name">{{ playerName }}</div>
-        <div class="player-points">{{ points }} Ponto{{ points > 1 ? 's' : '' }}</div>
+        <div class="player-points">{{ points }} <i class="bi bi-lightning-charge-fill"></i></div>
       </div>
       <div class="info-music">
         <audio #audioElement controls autoplay [src]="questionList[currentQuestion].questionText"></audio>
         <div class="account-points">{{ formatCounterValue(counter) }} seg</div>
-        <div class="play-music">{{ currentQuestion+1 }} / {{ questionList.length }}</div>
+        <div class="play-music">{{ currentQuestion+1 }} / 200</div>
       </div>
-      <div class="audio-question">
-        <i class="bi bi-lightning-charge-fill"></i>
-        <span>De quem é essa música?</span>
-        <i class="bi bi-lightning-charge-fill"></i>
-      </div>
+      <div class="audio-question">De quem é essa música?</div>
       <div class="response-band">
         <ol *ngFor="let question of questionList[currentQuestion].options">
           <li (click)="questionAnswer(currentQuestion+1, question)">
