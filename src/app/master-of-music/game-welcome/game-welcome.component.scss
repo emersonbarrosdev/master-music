@@ -78,8 +78,6 @@
 }
 
 .brand {
-  top: 6rem;
-  position: absolute;
   font-family: 'Geologica', sans-serif;
   font-size: 1.5rem;
   color: var(--first-green);
@@ -106,12 +104,30 @@
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
 }
 
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.hint {
+  color: var(--first-white);
+  font-size: 0.8rem;
+  text-align: end;
+  margin-right: 10px;
+}
+
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 4rem 0;
 }
 
 .form-control-lg {
@@ -120,8 +136,12 @@ form {
   color: #333;
 }
 
+.input-container {
+  margin-bottom: 1rem;
+  text-align: end;
+}
+
 input {
-  margin-bottom: 1.5rem;
   text-align: center;
   height: 56px;
   border-radius: 8px;
@@ -154,16 +174,15 @@ input::placeholder {
 }
 
 .btn-primary {
-  bottom: 6rem;
-  position: absolute;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
   cursor: pointer;
   text-transform: uppercase;
   background: none;
-  border: none;
+  border: 1px solid var(--first-yellow);
+  padding: 10px 20px;
   color: var(--first-yellow);
-  animation: buttonColorTransition 4s infinite; /* Ajuste a duração conforme necessário */
+  animation: buttonColorTransition 4s infinite;
 }
 
 .btn-primary:hover {

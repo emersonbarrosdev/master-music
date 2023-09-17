@@ -13,8 +13,9 @@
       </div>
       <form [formGroup]="form">
         <div class="input-container">
-          <input class="form-control form-control-lg" placeholder="DIGITE SEU NOME" type="text" formControlName="name"
-            required>
+          <input #message maxlength="10" class="form-control form-control-lg" placeholder="DIGITE SEU NOME" type="text"
+            formControlName="name" required>
+          <mat-hint class="hint" align="end">{{message.value.length}} / 10</mat-hint>
         </div>
         <mat-form-field>
           <mat-label>Level</mat-label>
@@ -24,8 +25,8 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <button (click)="onStart()" class="btn btn-primary">START</button>
       </form>
+      <button (click)="onStart()" class="btn btn-primary">START</button>
     </div>
   </ng-template>
 </div>

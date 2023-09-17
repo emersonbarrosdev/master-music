@@ -13,27 +13,6 @@
   background-repeat: no-repeat;
 }
 
-@keyframes colorTransition {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.game-over {
-  font-family: 'Bungee spice', cursive;
-  font-size: 3rem;
-  color: var(--first-orange);
-  animation: colorTransition 4s infinite ease;
-}
-
 .content {
   position: absolute;
   background-image: linear-gradient(to bottom, #3b3b3bef, #131212ee);
@@ -66,7 +45,7 @@
   align-items: center;
   text-align: center;
   background: linear-gradient(to bottom, #414141d3, #181818c9);
-  border: 1px solid var(--first-white);
+  border: 1px solid var(--first-yellow);
   height: 60px;
   margin-bottom: 1rem;
 }
@@ -81,7 +60,9 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-width: 70%;
-  color: var(--first-white);
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .player-points {
@@ -94,7 +75,9 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-width: 50%;
-  color: var(--first-white);
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
 
   i {
     margin-left: 10px;
@@ -208,21 +191,91 @@ ol {
   background-repeat: no-repeat;
 }
 
-.info-result {
-  text-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
-  margin: 4rem 0;
-  border-radius: 10px;
+@keyframes colorTransition {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ranking {
+  font-family: 'Bungee spice', cursive;
+  font-size: 2rem;
+  color: var(--first-orange);
+  animation: colorTransition 4s infinite ease;
+}
+
+.finish-result {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: start;
+  margin: 1.5rem;
+}
+
+.result-info-player {
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background: var(--first-white);
+  height: 50px;
+  margin-bottom: 1rem;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
+}
+
+.square {
+  border-radius: 5px;
+  font-family: 'Bungee Inline', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+}
+
+.result-player-name {
   font-family: 'Geologica', sans-serif;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   max-width: 70%;
-  color: var(--first-white);
+  color: #313131c9;
+}
+
+.result-player-points {
+  position: absolute;
+  right: 30%;
+  font-family: 'Geologica', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  max-width: 50%;
+  color: #313131c9;
+  i {
+    margin-left: 10px;
+  }
 }
 
 @keyframes buttonColorTransition {
@@ -239,15 +292,17 @@ ol {
   }
 }
 
+
 .btn-primary {
   font-family: 'Bungee', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-transform: uppercase;
   background: none;
-  border: none;
+  border: 1px solid var(--first-yellow);
+  padding: 10px 20px;
   color: var(--first-yellow);
-  animation: buttonColorTransition 4s infinite; /* Ajuste a duração conforme necessário */
+  animation: buttonColorTransition 4s infinite;
 }
 
 .btn-primary:hover {

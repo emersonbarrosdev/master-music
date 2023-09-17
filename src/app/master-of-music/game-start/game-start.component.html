@@ -2,13 +2,13 @@
   <div class="content">
     <div class="player-music" *ngIf="questionList.length">
       <div class="info-player">
-        <div class="player-name">{{ playerName }}</div>
+        <div class="player-name">{{ valurForm.name }}</div>
         <div class="player-points">{{ points }} <i class="bi bi-lightning-charge-fill"></i></div>
       </div>
       <div class="info-music">
         <audio #audioElement controls autoplay [src]="questionList[currentQuestion].questionText"></audio>
         <div class="account-points">{{ formatCounterValue(counter) }} seg</div>
-        <div class="play-music">{{ currentQuestion+1 }} / 200</div>
+        <div class="play-music">{{ currentQuestion+1 }} / {{ questionList.length }}</div>
       </div>
       <div class="audio-question">De quem é essa música?</div>
       <div class="response-band">
@@ -24,19 +24,20 @@
   </div>
 </div>
 
-<!-- ---------------------- FINISH SCREEN -------------------------- -->
-
 <div class="game-finish" *ngIf="isQuizCompleted">
   <div class="content">
     <div class="player-music">
-      <div class="game-over">
-        <span>GAME OVER</span>
+      <div class="ranking">
+        <span>RANKING</span>
       </div>
-     <div class="info-result">
-      <div>{{ playerName }}</div>
-      <div>VOCÊ FEZ {{ points }} PONTOS</div>
-     </div>
-      <button (click)="init()" class="btn btn-primary">INÍCIO</button>
+      <div class="finish-result">
+        <div class="result-info-player" *ngFor="let player of topPlayers; let i = index">
+          <span class="square">{{ i+1 }}º</span>
+          <div class="result-player-name">{{ player.name }}</div>
+          <div class="result-player-points">{{ player.points }}</div>
+        </div>
+      </div>
+        <button (click)="home()" class="btn btn-primary">INÍCIO</button>
     </div>
   </div>
 </div>

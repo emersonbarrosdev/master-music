@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { GameService } from '../service/game.service';
@@ -16,24 +16,35 @@ export class GameStartComponent implements OnInit {
   currentQuestion: number = 0;
   isQuizCompleted: boolean = false;
   points: number = 0;
-  counter: number = 30;
+  counter: number = 40;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
   interval: any;
   isSelected: boolean = true;
   valurForm: IForm;
+  topPlayers: { name: string, points: number }[] = [];
 
-  private router = inject(Router);
-  private gameService = inject(GameService);
+  constructor(
+    private router: Router,
+    private gameService: GameService
+  ) { }
 
   ngOnInit(): void {
-    this.playerName = localStorage.getItem("name")!;
+    this.valurForm = this.gameService.getForm();
     this.getAllQuestions();
     this.startCounter();
+    this.updateTopPlayers();
   }
 
+  shuffleQuestions() {
+    for (let i = this.questionList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.questionList[i], this.questionList[j]] = [this.questionList[j], this.questionList[i]];
+    }
+  }
+
+
   getAllQuestions() {
-    this.valurForm = this.gameService.getForm();
     this.gameService.getAllSongs().subscribe(
       resp => {
         switch (this.valurForm.level) {
@@ -50,7 +61,8 @@ export class GameStartComponent implements OnInit {
             this.questionList = resp.questions.master;
             break;
         }
-      })
+        this.shuffleQuestions();
+      });
   }
 
   questionAnswer(currentQuantity: number, option: any) {
@@ -72,8 +84,6 @@ export class GameStartComponent implements OnInit {
         this.currentQuestion++;
         this.resetCounter();
       }, 1000);
-
-
     } else {
       setTimeout(() => {
         this.currentQuestion++;
@@ -82,6 +92,23 @@ export class GameStartComponent implements OnInit {
       }, 1000);
       this.points -= 0;
     }
+    const playerName = localStorage.getItem('playerName');
+    localStorage.setItem(`${playerName}_points`, this.points.toString());
+    this.updateTopPlayers();
+  }
+
+
+  updateTopPlayers() {
+    const players: { name: string, points: number }[] = [];
+    const existingPlayers = JSON.parse(localStorage.getItem('players') || '[]');
+    existingPlayers.forEach(player => {
+      const playerName = player.name;
+      const playerPoints = parseInt(localStorage.getItem(`${playerName}_points`) || '0', 10);
+      players.push({ name: playerName, points: playerPoints });
+    });
+    players.sort((a, b) => b.points - a.points);
+
+    this.topPlayers = players.slice(0, 5);
   }
 
   formatCounterValue(value: number): string {
@@ -94,7 +121,7 @@ export class GameStartComponent implements OnInit {
         this.counter--;
         if (this.counter === 0) {
           this.currentQuestion++;
-          this.counter = 30;
+          this.counter = 40;
           this.points -= 0;
         }
         this.questionTimeout();
@@ -118,21 +145,11 @@ export class GameStartComponent implements OnInit {
 
   resetCounter() {
     this.stopCounter();
-    this.counter = 30;
+    this.counter = 40;
     this.startCounter();
   }
 
-  resetQuiz() {
-    this.resetCounter();
-    this.getAllQuestions();
-    this.points = 0;
-    this.counter = 30;
-    this.currentQuestion = 0;
-  }
-
-
-  init() {
+  home() {
     this.router.navigate(['']);
   }
-
 }

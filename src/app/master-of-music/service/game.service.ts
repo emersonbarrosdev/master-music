@@ -20,7 +20,6 @@ export class GameService {
   }
 
   getForm(): IForm {
-    console.log(this.valueForm);
     return this.valueForm;
   }
 
