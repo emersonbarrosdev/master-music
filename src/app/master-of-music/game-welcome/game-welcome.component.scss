@@ -7,21 +7,9 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url('../../../assets/img/background-home.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@keyframes logoZoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+  // background-image: url('../../../assets/img/background-home.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 
 .loading-container {
@@ -31,7 +19,6 @@
   flex-direction: row;
   align-items: center;
   text-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
-  animation: logoZoom 3s infinite alternate;
   .master-music {
    color: var(--first-green);
   }
@@ -43,49 +30,13 @@
   }
 }
 
-@keyframes lightningDescend {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  5% {
-    opacity: 1;
-  }
-
-  10% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  15% {
-    opacity: 1;
-  }
-
-  20% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-}
-
-.welcome-lightning {
-  animation: lightningDescend 1s linear infinite;
-}
-
 .brand {
   font-family: 'Geologica', sans-serif;
   font-size: 1.5rem;
   color: var(--first-green);
 
   i {
-    background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--first-yellow);
   }
 }
 
@@ -159,20 +110,6 @@ input::placeholder {
   color: #949494;
 }
 
-@keyframes buttonColorTransition {
-  0% {
-    color: var(--first-yellow);
-  }
-
-  50% {
-    color: var(--first-orange);
-  }
-
-  100% {
-    color: var(--first-yellow);
-  }
-}
-
 .btn-primary {
   font-family: 'Bungee', cursive;
   font-size: 2rem;
@@ -182,7 +119,6 @@ input::placeholder {
   border: 1px solid var(--first-yellow);
   padding: 10px 20px;
   color: var(--first-yellow);
-  animation: buttonColorTransition 4s infinite;
 }
 
 .btn-primary:hover {
@@ -193,5 +129,4 @@ input::placeholder {
 .btn-primary:focus {
   outline: none;
   background: none;
-  animation: buttonColorTransition 4s infinite;
 }
