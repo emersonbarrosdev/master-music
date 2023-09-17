@@ -8,9 +8,30 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url('../../../assets/img/background-start1.jpg');
+  background-image: url('../../../assets/img/background-start.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@keyframes colorTransition {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.game-over {
+  font-family: 'Bungee spice', cursive;
+  font-size: 3rem;
+  color: var(--first-orange);
+  animation: colorTransition 4s infinite ease;
 }
 
 .content {
@@ -50,7 +71,7 @@
   margin-bottom: 1rem;
 }
 
-.info-player .player-name {
+.player-name {
   font-family: 'Geologica', sans-serif;
   text-transform: uppercase;
   display: flex;
@@ -60,12 +81,10 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-width: 70%;
-  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
-    -webkit-background-clip: text;
-    color: transparent;
+  color: var(--first-white);
 }
 
-.info-player .player-points {
+.player-points {
   font-family: 'Geologica', sans-serif;
   text-transform: uppercase;
   display: flex;
@@ -75,9 +94,7 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-width: 50%;
-  background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
-    -webkit-background-clip: text;
-    color: transparent;
+  color: var(--first-white);
 
   i {
     margin-left: 10px;
@@ -179,6 +196,70 @@ ol {
   padding: 0;
 }
 
+.game-finish{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('../../../assets/img/background-finish.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-result {
+  text-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
+  margin: 4rem 0;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  font-family: 'Geologica', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  max-width: 70%;
+  color: var(--first-white);
+}
+
+@keyframes buttonColorTransition {
+  0% {
+    color: var(--first-yellow);
+  }
+
+  50% {
+    color: var(--first-orange);
+  }
+
+  100% {
+    color: var(--first-yellow);
+  }
+}
+
+.btn-primary {
+  font-family: 'Bungee', cursive;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--first-yellow);
+  animation: buttonColorTransition 4s infinite; /* Ajuste a duração conforme necessário */
+}
+
+.btn-primary:hover {
+  animation: none;
+  color: var(--first-white);
+}
+
+.btn-primary:focus {
+  outline: none;
+  background: none;
+  animation: buttonColorTransition 4s infinite;
+}
 
 @media (max-width: 836px) {
   .audio-question {

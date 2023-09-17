@@ -1,40 +1,106 @@
 {
-    "questions": [
-        {
-            "questionText": "../assets/songs/CPM 22 - Um Minuto Para O Fim Do Mundo.mp3",
-            "options": [
-                {
-                    "text": "CPM 22",
-                    "correct": true
-                },
-                {
-                    "text": "Led Zeppelin"
-                },
-                {
-                    "text": "Pink Floyd"
-                },
-                {
-                    "text": "Aerosmith"
-                }
-            ]
-        },
-        {
-            "questionText": "../assets/songs/Bon Jovi - Have A Nice Day.mp3",
-            "options": [
-                {
-                    "text": "Alice In Chains"
-                },
-                {
-                    "text": "Rise Against"
-                },
-                {
-                    "text": "Placebo",
-                    "correct": true
-                },
-                {
-                    "text": "Muse"
-                }
-            ]
-        }
+  "questions": {
+    "easy": [
+      {
+        "questionText": "../assets/songs/easy/U2 - One.mp3",
+        "options": [
+          {
+            "text": "CPM 22"
+          },
+          {
+            "text": "Led Zeppelin"
+          },
+          {
+            "text": "U2",
+            "correct": true
+          },
+          {
+            "text": "Aerosmith"
+          }
+        ]
+      },
+      {
+        "questionText": "../assets/songs/easy/Los Hermanos - Anna Júlia.mp3",
+        "options": [
+          {
+            "text": "Legião Urbana"
+          },
+          {
+            "text": "Los Hermanos",
+            "correct": true
+          },
+          {
+            "text": "Os Paralamas do Sucesso"
+          },
+          {
+            "text": "Titãs"
+          }
+        ]
+      }
+    ],
+
+
+    "normal": [
+      {
+        "questionText": "../assets/songs/easy/Legião Urbana - Tempo Perdido.mp3",
+        "options": [
+          {
+            "text": "RPM"
+          },
+          {
+            "text": "Capital Inicial"
+          },
+          {
+            "text": "Pato Fu"
+          },
+          {
+            "text": "Legião Urbana",
+            "correct": true
+          }
+        ]
+      }
+    ],
+
+    "hard": [
+      {
+        "questionText": "../assets/songs/Red Hot Chili Peppers - Californication.mp3",
+        "options": [
+          {
+            "text": "Red Hot Chili Peppers",
+            "correct": true
+          },
+          {
+            "text": "Led Zeppelin"
+          },
+          {
+            "text": "Pink Floyd"
+          },
+          {
+            "text": "Aerosmith"
+          }
+        ]
+      }
+    ],
+
+    "master": [
+      {
+        "questionText": "../assets/songs/Red Hot Chili Peppers - Californication.mp3",
+        "options": [
+          {
+            "text": "Red Hot Chili Peppers",
+            "correct": true
+          },
+          {
+            "text": "Led Zeppelin"
+          },
+          {
+            "text": "Pink Floyd"
+          },
+          {
+            "text": "Aerosmith"
+          }
+        ]
+      }
     ]
+  }
 }

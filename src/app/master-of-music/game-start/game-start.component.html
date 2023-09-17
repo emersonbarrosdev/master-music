@@ -24,39 +24,19 @@
   </div>
 </div>
 
-<!-- --------------------------------------------------------------------- -->
+<!-- ---------------------- FINISH SCREEN -------------------------- -->
 
-<div class="container" *ngIf="isQuizCompleted">
-  <mat-card class="example-card example-card-finish">
-    <mat-card-content>
-      <h1 class="text-center">PARABÉNS!!!</h1>
-      <div class="row pt-3 text-center">
-        <div class="col-12">
-          <label class="col-form-label">Player:</label>
-          <span class="span-resp"> {{ playerName }}</span>
-        </div>
+<div class="game-finish" *ngIf="isQuizCompleted">
+  <div class="content">
+    <div class="player-music">
+      <div class="game-over">
+        <span>GAME OVER</span>
       </div>
-      <div class="row text-center">
-        <div class="col-12">
-          <label class="col-form-label">Acertou: </label>
-          <span class="span-resp"> {{ correctAnswer }}</span>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-12">
-          <label class="col-form-label">Errou:</label>
-          <span class="span-resp"> {{ inCorrectAnswer }}</span>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-12">
-          <label class="col-form-label">Pontos:</label>
-          <span class="span-resp"> {{ points }}</span>
-        </div>
-      </div>
-      <mat-card-actions class="justify-content-md-center pt-3">
-        <button mat-raised-button color="primary" (click)="init()">INÍCIO</button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
+     <div class="info-result">
+      <div>{{ playerName }}</div>
+      <div>VOCÊ FEZ {{ points }} PONTOS</div>
+     </div>
+      <button (click)="init()" class="btn btn-primary">INÍCIO</button>
+    </div>
+  </div>
 </div>

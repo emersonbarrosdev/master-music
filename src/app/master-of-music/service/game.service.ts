@@ -2,12 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { IForm } from '../models/form';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
 
+  valueForm: IForm;
   private httpClient = inject(HttpClient);
   private dialog = inject(MatDialog);
 
@@ -16,10 +19,14 @@ export class GameService {
     return this.httpClient.get<any>(API);
   }
 
-  // getQuestionsByLevel(level: string) {
-  //   return this.httpClient.get(this.API) as any;
-  // }
+  getForm(): IForm {
+    console.log(this.valueForm);
+    return this.valueForm;
+  }
 
+  setForm(value: IForm) {
+    this.valueForm = value;
+  }
 
   showError(msgError: string) {
     this.dialog.open(DialogComponent, {

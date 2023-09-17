@@ -70,3 +70,7 @@ html, body {
 .mat-mdc-form-field-infix {
   width: 130px !important;
 }
+
+.btn {
+  --bs-btn-padding-y: 0 !important;
+}

@@ -17,6 +17,7 @@ export class GameWelcomeComponent implements OnInit {
   private router = inject(Router);
   private formBuilder = inject(FormBuilder);
   private gameService = inject(GameService);
+
   levels: { value: string, label: string }[] = [
     { value: 'easy', label: 'Fácil' },
     { value: 'normal', label: 'Normal' },
@@ -35,22 +36,24 @@ export class GameWelcomeComponent implements OnInit {
   userForm() {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
-      level: ['', ],
+      level: ['',],
     })
   }
 
-  getFormControl() {
-    return this.form.controls;
-  }
-
   onStart() {
-    console.log(this.form);
+
+    if (!this.form.get('name').value) {
+      this.gameService.showError('O nome deve ter no mínimo 3 caracteres');
+    }
+
+    if (!this.form.get('level').value) {
+      this.gameService.showError('Selecione um Level');
+    }
 
     if (this.form.valid) {
-      localStorage.setItem('name', this.getFormControl()['name'].value);
+      localStorage.setItem('name', this.form.get('name').value);
+      this.gameService.setForm(this.form.value);
       this.router.navigate(['/game-start']);
-    } else {
-      this.gameService.showError('O nome deve ter no mínimo 3 caracteres');
     }
 
   }

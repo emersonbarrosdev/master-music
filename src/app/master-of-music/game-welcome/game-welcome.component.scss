@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url('../../../assets/img/background-home1.jpg');
+  background-image: url('../../../assets/img/background-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,9 +73,22 @@
   }
 }
 
-
 .welcome-lightning {
   animation: lightningDescend 1s linear infinite;
+}
+
+.brand {
+  top: 6rem;
+  position: absolute;
+  font-family: 'Geologica', sans-serif;
+  font-size: 1.5rem;
+  color: var(--first-green);
+
+  i {
+    background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 .content {
@@ -99,20 +112,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.brand {
-  top: 6rem;
-  position: absolute;
-  font-family: 'Geologica', sans-serif;
-  font-size: 1.5rem;
-  color: var(--first-green);
-
-  i {
-    background-image: linear-gradient(to bottom, var(--first-yellow), var(--first-orange));
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 }
 
 .form-control-lg {
@@ -157,12 +156,10 @@ input::placeholder {
 .btn-primary {
   bottom: 6rem;
   position: absolute;
-  padding: 0;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
   cursor: pointer;
   text-transform: uppercase;
-  width: 150px;
   background: none;
   border: none;
   color: var(--first-yellow);

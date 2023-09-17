@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { GameService } from '../service/game.service';
+import { IForm } from '../models/form';
 
 @Component({
   selector: 'app-game-start',
@@ -20,6 +21,7 @@ export class GameStartComponent implements OnInit {
   inCorrectAnswer: number = 0;
   interval: any;
   isSelected: boolean = true;
+  valurForm: IForm;
 
   private router = inject(Router);
   private gameService = inject(GameService);
@@ -31,9 +33,23 @@ export class GameStartComponent implements OnInit {
   }
 
   getAllQuestions() {
+    this.valurForm = this.gameService.getForm();
     this.gameService.getAllSongs().subscribe(
       resp => {
-        this.questionList = resp.questions;
+        switch (this.valurForm.level) {
+          case 'easy':
+            this.questionList = resp.questions.easy;
+            break;
+          case 'normal':
+            this.questionList = resp.questions.normal;
+            break;
+          case 'hard':
+            this.questionList = resp.questions.hard;
+            break;
+          case 'master':
+            this.questionList = resp.questions.master;
+            break;
+        }
       })
   }
 
@@ -50,7 +66,7 @@ export class GameStartComponent implements OnInit {
       }, 100000);
     }
     if (option.correct) {
-      this.points += 1;
+      this.points += 3;
       this.correctAnswer++;
       setTimeout(() => {
         this.currentQuestion++;
