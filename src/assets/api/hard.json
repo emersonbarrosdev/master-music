@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "questionText": "../assets/songs/easy/U2 - One.mp3",
+      "questionText": "../assets/songs",
       "options": [
         {
           "text": "Skank"

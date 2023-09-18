@@ -1,20 +1,344 @@
 {
   "questions": [
     {
-      "questionText": "../assets/songs/easy/U2 - One.mp3",
+      "questionText": "../songs/normal/Avril Lavigne - Losing Grip.mp3",
       "options": [
         {
-          "text": "Skank"
+          "text": "Anne-Marie"
         },
         {
-          "text": "Led Zeppelin"
+          "text": "Adele"
         },
         {
-          "text": "U2",
+          "text": "Avril Lavigne",
           "correct": true
         },
         {
-          "text": "Aerosmith"
+          "text": "Pink"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Coldplay - Yellow.mp3",
+      "options": [
+        {
+          "text": "Coldplay",
+          "correct": true
+        },
+        {
+          "text": "The Beatles"
+        },
+        {
+          "text": "Jimi Hendrix"
+        },
+        {
+          "text": "Van Halen"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/CPM 22 - Um Minuto Para O Fim Do Mundo.mp3",
+      "options": [
+        {
+          "text": "Raimundos"
+        },
+        {
+          "text": "Nenhum de Nós"
+        },
+        {
+          "text": "Dead Fish"
+        },
+        {
+          "text": "CPM 22",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Foo Fighters - Times Like These - Acoustic Version.mp3",
+      "options": [
+        {
+          "text": "The Eagles"
+        },
+        {
+          "text": "Foo Fighters",
+          "correct": true
+        },
+        {
+          "text": "The Police"
+        },
+        {
+          "text": "Stone Temple Pilots"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Guns N' Roses - Welcome To The Jungle.mp3",
+      "options": [
+        {
+          "text": "Rush"
+        },
+        {
+          "text": "Guns N' Roses",
+          "correct": true
+        },
+        {
+          "text": "The Rolling Stones"
+        },
+        {
+          "text": "Soundgarden"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Incubus - Oil and Water.mp3",
+      "options": [
+        {
+          "text": "Incubus",
+          "correct": true
+        },
+        {
+          "text": "Boston"
+        },
+        {
+          "text": "The Talking Heads"
+        },
+        {
+          "text": "Jethro Tull"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Korn - Freak On a Leash.mp3",
+      "options": [
+        {
+          "text": "The Clash"
+        },
+        {
+          "text": "Korn",
+          "correct": true
+        },
+        {
+          "text": "The Beastie Boys"
+        },
+        {
+          "text": "Nirvana"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Limp Bizkit - Take A Look Around.mp3",
+      "options": [
+        {
+          "text": "Limp Bizkit",
+          "correct": true
+        },
+        {
+          "text": "Journey"
+        },
+        {
+          "text": "Creedence Clearwater Revival"
+        },
+        {
+          "text": "Duran Duran"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Linkin Park - Faint.mp3",
+      "options": [
+        {
+          "text": "Radiohead"
+        },
+        {
+          "text": "Sex Pistols"
+        },
+        {
+          "text": "Blondie"
+        },
+        {
+          "text": "Linkin Park",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/NX Zero - Marcas de Expressão.mp3",
+      "options": [
+        {
+          "text": "Garage Fuzz"
+        },
+        {
+          "text": "Inocentes"
+        },
+        {
+          "text": "NX Zero",
+          "correct": true
+        },
+        {
+          "text": "Hateen"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/O Rappa - Anjos (Pra quem tem fé).mp3",
+      "options": [
+        {
+          "text": "Capital Inicial"
+        },
+        {
+          "text": "O Rappa",
+          "correct": true
+        },
+        {
+          "text": "Sepultura"
+        },
+        {
+          "text": "Moptop"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Pitty - Pulsos - Ao Vivo.mp3",
+      "options": [
+        {
+          "text": "Pitty",
+          "correct": true
+        },
+        {
+          "text": "MALVADA"
+        },
+        {
+          "text": "Charlotte Matou um Cara"
+        },
+        {
+          "text": "Far From Alaska"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Queen - Bohemian Rhapsody.mp3",
+      "options": [
+        {
+          "text": "The Scorpions"
+        },
+        {
+          "text": "Queen",
+          "correct": true
+        },
+        {
+          "text": "Motorhead"
+        },
+        {
+          "text": "Judas Priest"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Rage Against The Machine - Wake Up.mp3",
+      "options": [
+        {
+          "text": "Linkin Park"
+        },
+        {
+          "text": "Foo Fighters"
+        },
+        {
+          "text": "Rage Against The Machine",
+          "correct": true
+        },
+        {
+          "text": "Silverchair"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Red Hot Chili Peppers - Californication.mp3",
+      "options": [
+        {
+          "text": "The Cure"
+        },
+        {
+          "text": "The Orb"
+        },
+        {
+          "text": "Coldplay"
+        },
+        {
+          "text": "Red Hot Chili Peppers",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/Silverchair - Freak.mp3",
+      "options": [
+        {
+          "text": "Silverchair",
+          "correct": true
+        },
+        {
+          "text": "Black Eyed Peas"
+        },
+        {
+          "text": "Slayer"
+        },
+        {
+          "text": "The Roots"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/The Calling - Wherever You Will Go.mp3",
+      "options": [
+        {
+          "text": "Underworld"
+        },
+        {
+          "text": "The Calling",
+          "correct": true
+        },
+        {
+          "text": "R.E.M."
+        },
+        {
+          "text": "Primus"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/The Goo Goo Dolls - Iris.mp3",
+      "options": [
+        {
+          "text": "U2"
+        },
+        {
+          "text": "The Calling"
+        },
+        {
+          "text": "The Goo Goo Dolls",
+          "correct": true
+        },
+        {
+          "text": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "questionText": "../songs/normal/The Verve - Bitter Sweet Symphony.mp3",
+      "options": [
+        {
+          "text": "The Pretenders"
+        },
+        {
+          "text": "The Beach Boys"
+        },
+        {
+          "text": "The Door"
+        },
+        {
+          "text": "The Verve",
+          "correct": true
         }
       ]
     }
