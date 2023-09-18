@@ -15,8 +15,27 @@ export class GameService {
   private dialog = inject(MatDialog);
 
   getAllSongs() {
-    const API = "../../../assets/song.json"
-    return this.httpClient.get<any>(API);
+    return this.httpClient.get<any>(this.getApiSongs());
+  }
+
+  getApiSongs(): string {
+    let API = '';
+    this.valueForm = this.getForm();
+    switch (this.valueForm.level) {
+      case 'easy':
+        API = '../../../assets/api/easy.json';
+        break;
+      case 'normal':
+        API = '../../../assets/api/normal.json';
+        break;
+      case 'hard':
+        API = '../../../assets/api/hard.json';
+        break;
+      case 'master':
+        API = '../../../assets/api/master.json';
+        break;
+    }
+    return API;
   }
 
   getForm(): IForm {

@@ -1,8 +1,8 @@
-<div class="game-start" *ngIf="!isQuizCompleted">
+<div class="game-start" *ngIf="!isQuizCompleted && valueForm">
   <div class="content">
     <div class="player-music" *ngIf="questionList.length">
       <div class="info-player">
-        <div class="player-name">{{ valurForm.name }}</div>
+        <div class="player-name">{{ valueForm.name }}</div>
         <div class="player-points">{{ points }} <i class="bi bi-lightning-charge-fill"></i></div>
       </div>
       <div class="info-music">

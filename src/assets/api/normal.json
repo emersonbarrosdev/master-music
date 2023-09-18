@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "questionText": "../assets/songs/easy/U2 - One.mp3",
+      "options": [
+        {
+          "text": "Skank"
+        },
+        {
+          "text": "Led Zeppelin"
+        },
+        {
+          "text": "U2",
+          "correct": true
+        },
+        {
+          "text": "Aerosmith"
+        }
+      ]
+    }
+  ]
+}

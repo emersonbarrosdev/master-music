@@ -69,16 +69,16 @@ export class GameWelcomeComponent implements OnInit {
 
       if (playerExists) {
         // Exibir mensagem de confirmação
-        const confirmMessage = `Jogador ${playerName} já existe. Deseja substituir?`;
-        if (confirm(confirmMessage)) {
-          // Substituir o jogador existente
-          existingPlayers.forEach(player => {
-            if (player.name === playerName) {
-              player.level = playerLevel;
-            }
-          });
-          localStorage.setItem('players', JSON.stringify(existingPlayers));
-        }
+        // const confirmMessage = `Jogador ${playerName} já existe. Deseja substituir?`;
+        // if (confirm(confirmMessage)) {
+        //   // Substituir o jogador existente
+        //   existingPlayers.forEach(player => {
+        //     if (player.name === playerName) {
+        //       player.level = playerLevel;
+        //     }
+        //   });
+        //   localStorage.setItem('players', JSON.stringify(existingPlayers));
+        // }
       } else {
         // Adicionar o jogador ao Local Storage
         existingPlayers.push({ name: playerName, level: playerLevel });

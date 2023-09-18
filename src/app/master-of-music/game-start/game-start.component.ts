@@ -21,7 +21,7 @@ export class GameStartComponent implements OnInit {
   inCorrectAnswer: number = 0;
   interval: any;
   isSelected: boolean = true;
-  valurForm: IForm;
+  valueForm: IForm;
   topPlayers: { name: string, points: number }[] = [];
 
   constructor(
@@ -30,7 +30,7 @@ export class GameStartComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.valurForm = this.gameService.getForm();
+    this.valueForm = this.gameService.getForm();
     this.getAllQuestions();
     this.startCounter();
     this.updateTopPlayers();
@@ -43,24 +43,10 @@ export class GameStartComponent implements OnInit {
     }
   }
 
-
   getAllQuestions() {
     this.gameService.getAllSongs().subscribe(
       resp => {
-        switch (this.valurForm.level) {
-          case 'easy':
-            this.questionList = resp.questions.easy;
-            break;
-          case 'normal':
-            this.questionList = resp.questions.normal;
-            break;
-          case 'hard':
-            this.questionList = resp.questions.hard;
-            break;
-          case 'master':
-            this.questionList = resp.questions.master;
-            break;
-        }
+        this.questionList = resp.questions;
         this.shuffleQuestions();
       });
   }

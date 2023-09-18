@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "questionText": "../assets/songs/easy/U2 - One.mp3",
+      "options": [
+        {
+          "text": "Skank"
+        },
+        {
+          "text": "Led Zeppelin"
+        },
+        {
+          "text": "U2",
+          "correct": true
+        },
+        {
+          "text": "Aerosmith"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Los Hermanos - Anna Júlia.mp3",
+      "options": [
+        {
+          "text": "Legião Urbana"
+        },
+        {
+          "text": "Los Hermanos",
+          "correct": true
+        },
+        {
+          "text": "Os Paralamas do Sucesso"
+        },
+        {
+          "text": "Titãs"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Legião Urbana - Tempo Perdido.mp3",
+      "options": [
+        {
+          "text": "RPM"
+        },
+        {
+          "text": "Capital Inicial"
+        },
+        {
+          "text": "Pato Fu"
+        },
+        {
+          "text": "Legião Urbana",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Charlie Brown Jr. - Lugar Ao Sol.mp3",
+      "options": [
+        {
+          "text": "Detonautas Roque Clube"
+        },
+        {
+          "text": "Charlie Brown Jr.",
+          "correct": true
+        },
+        {
+          "text": "Green Day"
+        },
+        {
+          "text": "Strike"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Bon Jovi - You Give Love A Bad Name.mp3",
+      "options": [
+        {
+          "text": "Bon Jovi",
+          "correct": true
+        },
+        {
+          "text": "Queen"
+        },
+        {
+          "text": "Matanza"
+        },
+        {
+          "text": "P.O.D"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Michael Jackson - Billie Jean.mp3",
+      "options": [
+        {
+          "text": "Michael Sheen"
+        },
+        {
+          "text": "Tina Turner"
+        },
+        {
+          "text": "Michael Jackson",
+          "correct": true
+        },
+        {
+          "text": "Planta e Raiz"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/George Michael - Careless Whisper.mp3",
+      "options": [
+        {
+          "text": "Tom Jones"
+        },
+        {
+          "text": "George Michael",
+          "correct": true
+        },
+        {
+          "text": "Carlton Banks"
+        },
+        {
+          "text": "Michael Jackson"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Cássia Eller - Malandragem - Ao Vivo.mp3",
+      "options": [
+        {
+          "text": "Pitty"
+        },
+        {
+          "text": "Annita"
+        },
+        {
+          "text": "Sandy"
+        },
+        {
+          "text": "Cássia Eller",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Jota Quest - Só Hoje.mp3",
+      "options": [
+        {
+          "text": "Charlie Brown Jr."
+        },
+        {
+          "text": "Ls Jack"
+        },
+        {
+          "text": "Paramore"
+        },
+        {
+          "text": "Jota Quest",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Skank - Vou Deixar.mp3",
+      "options": [
+        {
+          "text": "Ira!"
+        },
+        {
+          "text": "Skank",
+          "correct": true
+        },
+        {
+          "text": "Cidade Negra"
+        },
+        {
+          "text": "Stevie Wonder"
+        }
+      ]
+    }
+  ]
+}
