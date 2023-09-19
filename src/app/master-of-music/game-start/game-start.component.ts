@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { GameService } from '../service/game.service';
@@ -16,13 +16,15 @@ export class GameStartComponent implements OnInit {
   currentQuestion: number = 0;
   isQuizCompleted: boolean = false;
   points: number = 0;
-  counter: number = 40;
+  counter: number = 45;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
   interval: any;
   isSelected: boolean = true;
   valueForm: IForm;
   topPlayers: { name: string, points: number }[] = [];
+  @ViewChild('audioElement') audioElement: ElementRef;
+  isAudioPlaying: boolean;
 
   constructor(
     private router: Router,
@@ -36,6 +38,20 @@ export class GameStartComponent implements OnInit {
     this.updateTopPlayers();
   }
 
+  toggleAudio() {
+    const audio: HTMLAudioElement = this.audioElement.nativeElement;
+
+    if (audio.paused) {
+      audio.play();
+      this.isAudioPlaying = true;
+      this.startCounter();
+    } else {
+      audio.pause();
+      this.isAudioPlaying = false;
+      this.stopCounter();
+    }
+  }
+
   shuffleQuestions() {
     for (let i = this.questionList.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -46,6 +62,7 @@ export class GameStartComponent implements OnInit {
   getAllQuestions() {
     this.gameService.getAllSongs().subscribe(
       resp => {
+        this.isAudioPlaying = true;
         this.questionList = resp.questions;
         this.shuffleQuestions();
       });
@@ -107,7 +124,7 @@ export class GameStartComponent implements OnInit {
         this.counter--;
         if (this.counter === 0) {
           this.currentQuestion++;
-          this.counter = 40;
+          this.counter = 45;
           this.points -= 0;
         }
         this.questionTimeout();
@@ -131,7 +148,7 @@ export class GameStartComponent implements OnInit {
 
   resetCounter() {
     this.stopCounter();
-    this.counter = 40;
+    this.counter = 45;
     this.startCounter();
   }
 

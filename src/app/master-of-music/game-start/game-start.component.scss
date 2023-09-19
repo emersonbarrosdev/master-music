@@ -12,7 +12,6 @@
 
 .content {
   position: absolute;
-  background: #131212ee;
   padding: 20px;
   width: 70%;
   height: 90%;
@@ -20,13 +19,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid var(--first-yellow);
-  border-radius: 20px;
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
 }
 
 .player-music {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +37,8 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: #181818c9;
+  background-image: linear-gradient(to bottom, #464646ef, #1d1c1cee);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   border: 1px solid var(--first-yellow);
   height: 60px;
   margin-bottom: 1rem;
@@ -71,62 +68,56 @@
   font-size: 1.3rem;
   max-width: 50%;
   color: var(--first-yellow);
+
   i {
     margin-left: 10px;
   }
 }
 
 .info-music {
-  border-radius: 10px;
   width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
-.info-music .play-music {
+.play-music,
+.account-points {
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  padding: 0 20px;
+  border-radius: 10px;
+  justify-content: center;
+  width: 140px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--first-white);
   max-width: 70%;
-  border: 1.5px solid var(--first-white);
-  background: #181818b7;
-  height: 50px;
+  background: rgba(24, 24, 24, 0.7176470588);
+  height: 60px;
 }
 
-.info-music .account-points {
+.icon-play-pause {
+  font-size: 4.6rem;
+  color: var(--first-white);
+  cursor: pointer;
   display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: 0 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: var(--first-white);
-  max-width: 70%;
-  border: 1.5px solid var(--first-white);
-  background: #181818b7;
-  height: 50px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-audio {
-  width: 50%;
-  padding: 5px 0;
-  border-radius: 1px 1px 1px 1px;
+.icon-play-pause:hover {
+  color: #a8a8a8;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .audio-question {
-  font-family: 'Bungee', cursive;
+  font-family: 'Geologica', sans-serif;
   width: 70%;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   color: var(--first-yellow);
   font-size: 2rem;
 }
@@ -155,7 +146,7 @@ ol {
   padding: 0;
 }
 
-.game-finish{
+.game-finish {
   width: 100%;
   height: 100%;
   display: flex;
@@ -231,6 +222,7 @@ ol {
   font-size: 1.3rem;
   max-width: 50%;
   color: #313131c9;
+
   i {
     margin-left: 10px;
   }
@@ -257,10 +249,52 @@ ol {
   background: none;
 }
 
-@media (max-width: 836px) {
+@media (max-width: 490px) {}
+
+@media (max-width: 360px) {
+
+  .content {
+    padding: 0;
+    width: 80%;
+  }
+
+  .player-music {
+    width: 100%;
+  }
+
+  .info-player {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 80px;
+    background-image: linear-gradient(to bottom, #464646ef, #1d1c1cee);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .info-music {
+    width: 100%;
+  }
+
   .audio-question {
-    i {
-      display: none;
-    }
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+
+  .player-name {
+    margin-top: 0.2rem;
+  }
+
+  .player-points {
+    margin: 0.2rem 0;
+  }
+
+
+
+  .card {
+    width: 100%;
   }
 }
+
+@media (max-width: 285px) {}

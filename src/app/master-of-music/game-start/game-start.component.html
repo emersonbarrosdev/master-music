@@ -6,8 +6,11 @@
         <div class="player-points">{{ points }} <i class="bi bi-lightning-charge-fill"></i></div>
       </div>
       <div class="info-music">
-        <audio #audioElement controls autoplay [src]="questionList[currentQuestion].questionText"></audio>
         <div class="account-points">{{ formatCounterValue(counter) }} seg</div>
+        <div (click)="toggleAudio()">
+          <i class="bi icon-play-pause" [ngClass]="isAudioPlaying ? 'bi-pause-circle-fill' : 'bi-play-circle-fill'"></i>
+          <audio #audioElement autoplay [src]="questionList[currentQuestion].questionText"></audio>
+        </div>
         <div class="play-music">{{ currentQuestion+1 }} / {{ questionList.length }}</div>
       </div>
       <div class="audio-question">De quem é essa música?</div>
@@ -37,7 +40,7 @@
           <div class="result-player-points">{{ player.points }}</div>
         </div>
       </div>
-        <button (click)="home()" class="btn btn-primary">INÍCIO</button>
+      <button (click)="home()" class="btn btn-primary">INÍCIO</button>
     </div>
   </div>
 </div>
