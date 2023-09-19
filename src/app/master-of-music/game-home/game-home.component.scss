@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=IM+Fell+DW+Pica&display=swap');
+
+.game-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.brand {
+  font-family: 'Geologica', sans-serif;
+  font-size: 3rem;
+  color: var(--first-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 4.5rem;
+    color: var(--second-dark-green);
+  }
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 400px;
+  width: 100%;
+  margin: 3rem;
+}
+
+.example-full-width {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input {
+  text-transform: uppercase !important;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  height: 50px;
+  width: 100px;
+  background: var(--second-dark-green);
+}
+
+@media (max-width: 500px) {
+  .brand {
+    font-size: 2rem;
+
+    i {
+      font-size: 3.5rem;
+    }
+  }
+
+  .example-form {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand {
+    font-size: 1.7rem;
+
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  .example-form {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .brand {
+    font-size: 1.5rem;
+
+    i {
+      font-size: 2.7rem;
+    }
+  }
+
+  .example-form {
+    max-width: 240px;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="game-home">
+  <div class="brand">
+    <span>Master</span>
+    <i class="bi bi-lightning-charge-fill"></i>
+    <span>Music</span>
+  </div>
+  <form [formGroup]="form" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Digite seu nome</mat-label>
+      <input matInput #message axlength="10" placeholder="Informe seu nome" formControlName="name" required>
+      <mat-hint align="end">{{message.value.length}} / 10</mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Level</mat-label>
+      <mat-select formControlName="level" id="level" class="select" required>
+        <mat-option>--</mat-option>
+        <mat-option *ngFor="let level of levels" [value]="level.value">{{ level.label }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  <div class="example-button-row">
+    <button (click)="onStart()" mat-raised-button color="primary">START</button>
+  </div>
+</div>
