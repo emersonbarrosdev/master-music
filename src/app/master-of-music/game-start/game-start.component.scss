@@ -253,6 +253,16 @@ ol {
 
 @media (max-width: 360px) {
 
+  .icon-play-pause {
+    font-size: 4.3rem;
+  }
+
+  .play-music,
+  .account-points {
+    width: 90px;
+    font-size: 0.9rem;
+  }
+
   .content {
     padding: 0;
     width: 80%;
@@ -289,8 +299,6 @@ ol {
   .player-points {
     margin: 0.2rem 0;
   }
-
-
 
   .card {
     width: 100%;
