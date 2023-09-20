@@ -17,10 +17,10 @@ export class GameWelcomeComponent implements OnInit {
   private gameService: GameService;
 
   levels: { value: string, label: string }[] = [
-    { value: 'easy', label: 'Fácil - 10 Músicas' },
-    { value: 'normal', label: 'Normal - 20 Músicas' },
-    { value: 'hard', label: 'Difícil - 35 Músicas' },
-    { value: 'master', label: 'Mestre - 85 Músicas' },
+    { value: 'easy', label: 'Fácil - A opção perfeita para iniciantes.' },
+    { value: 'normal', label: 'Normal - Adequado para a maioria das pessoas.' },
+    { value: 'hard', label: 'Difícil - Uma escolha desafiadora.' },
+    { value: 'master', label: 'Mestre - Reservado para especialistas.' },
   ];
 
   constructor(
@@ -63,8 +63,17 @@ export class GameWelcomeComponent implements OnInit {
     }
 
     if (this.form.valid) {
-      const playerName = nameControl.value;
-      const playerLevel = levelControl.value;
+      const playerName = this.form.get('name').value;
+      const playerLevel = this.form.get('level').value;
+      const existingPlayers = JSON.parse(localStorage.getItem('players') || '[]');
+      const playerExists = existingPlayers.find(player => player.name === playerName);
+
+      if (playerExists) {
+        localStorage.setItem('players', JSON.stringify(existingPlayers));
+      } else {
+        existingPlayers.push({ name: playerName, level: playerLevel });
+        localStorage.setItem('players', JSON.stringify(existingPlayers));
+      }
       localStorage.setItem(`${playerName}_points`, '0');
       localStorage.setItem('playerName', playerName);
       localStorage.setItem('playerLevel', playerLevel);

@@ -179,6 +179,60 @@
           "text": "Stevie Wonder"
         }
       ]
+    },
+    {
+      "questionText": "../assets/songs/easy/The Beatles - Yesterday - Remastered 2009.mp3",
+      "options": [
+        {
+          "text": "Missy Elliott"
+        },
+        {
+          "text": "Marvin Gaye"
+        },
+        {
+          "text": "The Beatles",
+          "correct": true
+        },
+        {
+          "text": "Bob Dylan"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/Titãs - Isso.mp3",
+      "options": [
+        {
+          "text": "Secos & Molhados"
+        },
+        {
+          "text": "Bacamarte"
+        },
+        {
+          "text": "Titãs",
+          "correct": true
+        },
+        {
+          "text": "Barão Vermelho"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/easy/AC DC - It's a Long Way to the Top (If You Wanna Rock 'N' Roll).mp3",
+      "options": [
+        {
+          "text": "The White Stripes"
+        },
+        {
+          "text": "AC/DC",
+          "correct": true
+        },
+        {
+          "text": "The Rolling Stones"
+        },
+        {
+          "text": "Carly Simon"
+        }
+      ]
     }
   ]
 }

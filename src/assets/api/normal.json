@@ -359,6 +359,78 @@
           "text": "Sonic Youth"
         }
       ]
+    },
+    {
+      "questionText": "../assets/songs/normal/Adema - Planets.mp3",
+      "options": [
+        {
+          "text": "Adema",
+          "correct": true
+        },
+        {
+          "text": "Deftones"
+        },
+        {
+          "text": "Drowning Pool"
+        },
+        {
+          "text": "Otep"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/normal/Alex Band - Shape of Your Heart.mp3",
+      "options": [
+        {
+          "text": "Bruce Springsteen"
+        },
+        {
+          "text": "Alex Band",
+          "correct": true
+        },
+        {
+          "text": "David Bowie"
+        },
+        {
+          "text": "David Bowie"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/normal/Os Paralamas Do Sucesso, Djavan - Uma Brasileira.mp3",
+      "options": [
+        {
+          "text": "Angra"
+        },
+        {
+          "text": "Kid Abelha"
+        },
+        {
+          "text": "Os Paralamas do Sucesso",
+          "correct": true
+        },
+        {
+          "text": "Camisa de Vênus"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/normal/Capital Inicial - Que País é Esse.mp3",
+      "options": [
+        {
+          "text": "Ira!"
+        },
+        {
+          "text": "Blitz"
+        },
+        {
+          "text": "Ultraje a Rigor"
+        },
+        {
+          "text": "Capital Inicial",
+          "correct": true
+        }
+      ]
     }
   ]
 }

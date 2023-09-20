@@ -1,8 +1,8 @@
-import { Component, OnInit, Inject, ViewChild, ElementRef } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { interval } from 'rxjs';
-import { GameService } from '../service/game.service';
 import { IForm } from '../models/form';
+import { GameService } from '../service/game.service';
 
 @Component({
   selector: 'app-game-start',
