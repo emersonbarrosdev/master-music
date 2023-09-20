@@ -11,10 +11,10 @@ import { IForm } from '../models/form';
 })
 export class GameStartComponent implements OnInit {
 
+  challengeCompleted: boolean = false;
   playerName: string;
   questionList: any = [];
   currentQuestion: number = 0;
-  isQuizCompleted: boolean = false;
   points: number = 0;
   counter: number = 45;
   correctAnswer: number = 0;
@@ -73,7 +73,7 @@ export class GameStartComponent implements OnInit {
     if (currentQuantity === this.questionList.length) {
       this.interval = interval(1000)
         .subscribe(val => {
-          this.isQuizCompleted = true;
+          this.challengeCompleted = true;
           this.stopCounter();
         });
       setTimeout(() => {
@@ -141,7 +141,7 @@ export class GameStartComponent implements OnInit {
 
   questionTimeout() {
     if (this.currentQuestion >= this.questionList.length) {
-      this.isQuizCompleted = true;
+      this.challengeCompleted = true;
       this.stopCounter()
     }
   }

@@ -1,308 +1,269 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=IM+Fell+DW+Pica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Poppins:wght@300;400&display=swap');
 
 .game-start {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.content {
-  position: absolute;
-  padding: 20px;
-  width: 70%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.player-music {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.info-player {
-  border-radius: 10px;
-  width: 70%;
+.player {
+  font-family: 'Geologica', sans-serif;
+  border-radius: 5px;
+  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to bottom, #464646ef, #1d1c1cee);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
-  border: 1px solid var(--first-yellow);
+  border: 2px solid var(--second-dark-green);
   height: 60px;
-  margin-bottom: 1.3rem;
-}
-
-.player-name {
-  font-family: 'Geologica', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
   padding: 0 20px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  max-width: 70%;
-  color: var(--first-yellow);
-}
-
-.player-points {
-  font-family: 'Geologica', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: 0 20px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  max-width: 50%;
-  color: var(--first-yellow);
-
-  i {
-    margin-left: 10px;
-  }
+  background: var(--first-orange);
+  color: var(--first-white);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .info-music {
-  width: 70%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.play-music,
-.account-points {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: center;
-  width: 140px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--first-white);
-  max-width: 70%;
-  background: rgba(24, 24, 24, 0.7176470588);
+  text-align: center;
+  border: 2px solid var(--first-orange);
   height: 60px;
+  padding: 0 20px;
+  color: var(--first-orange);
 }
 
 .icon-play-pause {
-  font-size: 4.6rem;
-  color: var(--first-white);
+  font-size: 5rem;
+  color: var(--second-dark-green);
   cursor: pointer;
   display: flex;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .icon-play-pause:hover {
-  color: #a8a8a8;
+  color: var(--first-orange);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: color 0.3s, text-shadow 0.3s;
 }
 
-.audio-question {
+.question {
+  width: 400px;
   font-family: 'Geologica', sans-serif;
-  width: 70%;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: var(--first-yellow);
-  font-size: 2rem;
+  color: var(--first-orange);
+  margin: 1.3rem 0 0.5rem 0;
 }
 
-.response-band {
-  width: 100%;
-  margin: 0;
-}
-
-.card {
-  width: 70%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-li .card:hover {
-  border: 1px solid #3f51b5;
+.selection-alternatives {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 ol {
   padding: 0;
 }
 
-.game-finish {
-  width: 100%;
-  height: 100%;
+li {
+  list-style-type: none;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.ranking {
-  font-family: 'Bungee spice', cursive;
-  font-size: 2rem;
-  color: var(--first-orange);
-}
-
-.finish-result {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  margin: 1.5rem;
-}
 
-.result-info-player {
-  border-radius: 10px;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  background: var(--first-white);
-  height: 50px;
-  margin-bottom: 1rem;
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
-}
+  .selected {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding: 0 20px;
+  }
 
-.square {
-  border-radius: 5px;
-  font-family: 'Bungee Inline', cursive;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  background: var(--first-yellow);
-}
-
-.result-player-name {
-  font-family: 'Geologica', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  max-width: 70%;
-  color: #313131c9;
-}
-
-.result-player-points {
-  position: absolute;
-  right: 30%;
-  font-family: 'Geologica', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: 0 20px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  max-width: 50%;
-  color: #313131c9;
-
-  i {
-    margin-left: 10px;
+  .selected:hover {
+    background: rgb(245, 245, 245);
+    border: 1.1px solid #000000;
   }
 }
 
-.btn-primary {
-  font-family: 'Bungee', cursive;
-  font-size: 1.5rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  background: none;
-  border: 1px solid var(--first-yellow);
-  padding: 10px 20px;
-  color: var(--first-yellow);
+@media (max-width: 500px) {
+  .player {
+    width: 340px;
+  }
+
+  .info-music {
+    width: 340px;
+  }
+
+  .icon-play-pause {
+    font-size: 4.6rem;
+  }
+
+  .question {
+    width: 340px;
+    font-size: 1.5rem;
+  }
+
+  .selection-alternatives {
+    width: 340px;
+  }
+
+  li {
+    .selected {
+      font-size: 1.3rem;
+    }
+  }
 }
 
-.btn-primary:hover {
-  animation: none;
-  color: var(--first-white);
-}
+@media (max-width: 375px) {
+  .player {
+    width: 300px;
+  }
 
-.btn-primary:focus {
-  outline: none;
-  background: none;
-}
-
-@media (max-width: 490px) {}
-
-@media (max-width: 360px) {
+  .info-music {
+    width: 300px;
+  }
 
   .icon-play-pause {
     font-size: 4.3rem;
   }
 
-  .play-music,
-  .account-points {
-    width: 90px;
-    font-size: 0.9rem;
-  }
-
-  .content {
-    padding: 0;
-    width: 80%;
-  }
-
-  .player-music {
-    width: 100%;
-  }
-
-  .info-player {
-    width: 100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    height: 80px;
-    background-image: linear-gradient(to bottom, #464646ef, #1d1c1cee);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
-  }
-
-  .info-music {
-    width: 100%;
-  }
-
-  .audio-question {
-    width: 100%;
+  .question {
+    width: 300px;
     font-size: 1.3rem;
-    margin: 1rem 0;
   }
 
-  .player-name {
-    margin-top: 0.2rem;
+  .selection-alternatives {
+    width: 300px;
   }
 
-  .player-points {
-    margin: 0.2rem 0;
-  }
-
-  .card {
-    width: 100%;
+  li {
+    .selected {
+      font-size: 1rem;
+    }
   }
 }
 
-@media (max-width: 285px) {}
+@media (max-width: 320px) {
+  .player {
+    width: 240px;
+
+    i {
+      display: none;
+    }
+  }
+
+  .info-music {
+    width: 240px;
+  }
+
+  .icon-play-pause {
+    font-size: 4.3rem;
+  }
+
+  .question {
+    width: 240px;
+    font-size: 1.1rem;
+  }
+
+  .selection-alternatives {
+    width: 240px;
+  }
+
+  li {
+    .selected {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// ---- SCREEN FINISH ----
+
+.ranking {
+  font-family: 'Bungee spice', cursive;
+  font-size: 2rem;
+  color: var(--first-orange);
+  margin-bottom: 2rem;
+}
+
+.ranking-player {
+  font-family: 'Geologica', sans-serif;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--second-dark-green);
+  height: 60px;
+  background: var(--first-orange);
+  color: var(--first-white);
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+.square {
+  border-radius: 3px;
+  font-family: 'Bungee Inline', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background: var(--second-dark-green);
+}
+
+.ranking-player-points {
+  margin-right: 20px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-top: 2rem;
+  margin-right: 8px;
+  height: 50px;
+  width: 100px;
+  background: var(--second-dark-green);
+}
+
+@media (max-width: 500px) {
+  .ranking-player {
+    width: 340px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .ranking-player {
+    width: 300px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .ranking-player {
+    width: 240px;
+    font-size: 0.9rem;
+  }
+}

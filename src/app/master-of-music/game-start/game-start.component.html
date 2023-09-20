@@ -1,33 +1,30 @@
-<!-- <div class="game-start" *ngIf="!isQuizCompleted && valueForm">
-  <div class="content">
-    <div class="player-music" *ngIf="questionList.length">
-      <div class="info-player">
-        <div class="player-name">{{ valueForm.name }}</div>
-        <div class="player-points">{{ points }} <i class="bi bi-lightning-charge-fill"></i></div>
-      </div>
-      <div class="info-music">
-        <div class="account-points">{{ formatCounterValue(counter) }} seg</div>
-        <div (click)="toggleAudio()">
-          <i class="bi icon-play-pause" [ngClass]="isAudioPlaying ? 'bi-pause-circle-fill' : 'bi-play-circle-fill'"></i>
-          <audio #audioElement autoplay [src]="questionList[currentQuestion].questionText"></audio>
-        </div>
-        <div class="play-music">{{ currentQuestion+1 }} / {{ questionList.length }}</div>
-      </div>
-      <div class="audio-question">De quem é essa música?</div>
-      <div class="response-band">
-        <ol *ngFor="let question of questionList[currentQuestion].options">
-          <li (click)="questionAnswer(currentQuestion+1, question)">
-            <div appIsCorrect [isCorrect]="question.correct" class="card">
-              {{ question.text }}
-            </div>
-          </li>
-        </ol>
-      </div>
+<div class="game-start" *ngIf="!challengeCompleted && valueForm">
+  <div class="player" *ngIf="questionList.length">
+    <div><i class="bi bi-emoji-smile-fill"></i> {{ valueForm.name }}</div>
+    <div><i class="bi bi-lightning-charge-fill"></i> {{ points }}</div>
+  </div>
+
+  <div class="info-music">
+    <div>{{ formatCounterValue(counter) }} seg.</div>
+    <div (click)="toggleAudio()">
+      <i class="bi icon-play-pause" [ngClass]="isAudioPlaying ? 'bi-pause-circle-fill' : 'bi-play-circle-fill'"></i>
+      <audio #audioElement autoplay [src]="questionList[currentQuestion].questionText"></audio>
     </div>
+    <div>{{ currentQuestion+1 }} / {{ questionList.length }}</div>
+  </div>
+
+  <div class="question">De quem é essa música?</div>
+
+  <div class="selection-alternatives">
+    <ol *ngFor="let question of questionList[currentQuestion].options">
+      <li (click)="questionAnswer(currentQuestion+1, question)">
+        <div appIsCorrect [isCorrect]="question.correct" class="selected">{{ question.text }}</div>
+      </li>
+    </ol>
   </div>
 </div>
 
-<div class="game-finish" *ngIf="isQuizCompleted">
+<!-- <div class="game-finish" *ngIf="challengeCompleted">
   <div class="content">
     <div class="player-music">
       <div class="ranking">
@@ -37,10 +34,23 @@
         <div class="result-info-player" *ngFor="let player of topPlayers; let i = index">
           <span class="square">{{ i+1 }}º</span>
           <div class="result-player-name">{{ player.name }}</div>
-          <div class="result-player-points">{{ player.points }}</div>
+          <div class="result-player-points"> {{ player.points }}</div>
         </div>
       </div>
       <button (click)="home()" class="btn btn-primary">INÍCIO</button>
     </div>
   </div>
 </div> -->
+
+<div class="game-start" *ngIf="challengeCompleted">
+  <div class="ranking">RANKING</div>
+  <div class="ranking-player" *ngFor="let player of topPlayers; let i = index">
+    <span class="square">{{ i+1 }}º</span>
+    <div class="ranking-player-name">{{ player.name }}</div>
+    <div class="ranking-player-points">
+      <i class="bi bi-lightning-charge-fill"></i> {{ player.points }}</div>
+  </div>
+  <div class="example-button-row">
+    <button (click)="home()" mat-raised-button color="primary">INÍCIO</button>
+  </div>
+</div>
