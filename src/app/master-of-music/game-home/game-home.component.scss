@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=IM+Fell+DW+Pica&display=swap');
-
 .game-home {
   width: 100%;
   height: 100%;
@@ -13,14 +12,14 @@
 .brand {
   font-family: 'Geologica', sans-serif;
   font-size: 3rem;
-  color: var(--first-orange);
+  color: var(--orange);
   display: flex;
   align-items: center;
   justify-content: center;
 
   i {
     font-size: 4.5rem;
-    color: var(--second-dark-green);
+    color: var(--green);
   }
 }
 
@@ -45,7 +44,7 @@ input {
   margin-right: 8px;
   height: 50px;
   width: 100px;
-  background: var(--second-dark-green);
+  background: var(--green);
 }
 
 @media (max-width: 500px) {

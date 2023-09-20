@@ -13,13 +13,29 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Nunito', sans-serif;
+  background: var(--background);
 }
 
 :root {
-  --first-orange: #ff5100;
-  --second-dark-green: #05C200;
-  --first-white: #fff;
-  --first-gray: #636363;
+  --orange: #ff5100;
+  --green: #05C200;
+  --player: #fff;
+  --border: #dddddd;
+  --background: #fff;
+  --hover: #f7f6f6;
+  --text: #161515;
+}
+
+:root .dark-theme {
+  --text: #fff;
+  --player: #161515;
+  --border: #dddddd;
+  --background: #161515;
+  --hover: #777777;
+}
+
+.mat-mdc-select {
+  color: var(--orange) !important;
 }
 
 .mat-mdc-form-field-infix {

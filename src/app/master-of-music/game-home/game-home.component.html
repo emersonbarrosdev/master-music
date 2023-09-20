@@ -1,4 +1,5 @@
 <div class="game-home">
+  <app-theme></app-theme>
   <div class="brand">
     <span>Master</span>
     <i class="bi bi-lightning-charge-fill"></i>
@@ -13,7 +14,6 @@
     <mat-form-field>
       <mat-label>Level</mat-label>
       <mat-select formControlName="level" id="level" class="select" required>
-        <mat-option>--</mat-option>
         <mat-option *ngFor="let level of levels" [value]="level.value">{{ level.label }}
         </mat-option>
       </mat-select>

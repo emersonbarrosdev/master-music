@@ -17,6 +17,7 @@ import { DialogComponent } from './master-of-music/dialog/dialog.component';
 import { IsCorrent } from './master-of-music/directive/is-correct';
 import { GameWelcomeComponent } from './master-of-music/game-home/game-home.component';
 import { GameStartComponent } from './master-of-music/game-start/game-start.component';
+import { ThemeComponent } from './master-of-music/theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GameStartComponent } from './master-of-music/game-start/game-start.comp
     GameStartComponent,
     GameWelcomeComponent,
     DialogComponent,
-    IsCorrent
+    IsCorrent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,

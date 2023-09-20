@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { GameService } from '../service/game.service';
 
@@ -17,10 +17,10 @@ export class GameWelcomeComponent implements OnInit {
   private gameService: GameService;
 
   levels: { value: string, label: string }[] = [
-    { value: 'easy', label: 'Fácil - A opção perfeita para iniciantes.' },
-    { value: 'normal', label: 'Normal - Adequado para a maioria das pessoas.' },
-    { value: 'hard', label: 'Difícil - Uma escolha desafiadora.' },
-    { value: 'master', label: 'Mestre - Reservado para especialistas.' },
+    { value: 'easy', label: 'Fácil' },
+    { value: 'normal', label: 'Normal' },
+    { value: 'hard', label: 'Difícil' },
+    { value: 'master', label: 'Mestre' },
   ];
 
   constructor(
@@ -44,7 +44,7 @@ export class GameWelcomeComponent implements OnInit {
   userForm() {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]],
-      level: [''],
+      level: ['normal'],
     });
   }
 

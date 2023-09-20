@@ -21,11 +21,11 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 2px solid var(--second-dark-green);
+  border: 2px solid var(--green);
   height: 60px;
   padding: 0 20px;
-  background: var(--first-orange);
-  color: var(--first-white);
+  background: var(--orange);
+  color: var(--player);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -39,23 +39,31 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  border: 2px solid var(--first-orange);
   height: 60px;
   padding: 0 20px;
-  color: var(--first-orange);
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  background: var(--background);
+}
+
+.counter {
+  width: 100px;
+}
+
+.number-music {
+  width: 100px;
 }
 
 .icon-play-pause {
   font-size: 5rem;
-  color: var(--second-dark-green);
+  color: var(--green);
   cursor: pointer;
   display: flex;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .icon-play-pause:hover {
-  color: var(--first-orange);
+  color: var(--orange);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: color 0.3s, text-shadow 0.3s;
 }
@@ -67,7 +75,7 @@
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: var(--first-orange);
+  color: var(--orange);
   margin: 1.3rem 0 0.5rem 0;
 }
 
@@ -90,7 +98,7 @@ li {
   .selected {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    border: 1px solid gray;
+    border: 1px solid var(--border);
     border-radius: 5px;
     height: 60px;
     display: flex;
@@ -98,11 +106,13 @@ li {
     text-align: start;
     justify-content: center;
     padding: 0 20px;
+    color: var(--text);
+    background-color: var(--background);
+    transition: background-color 0.3s ease;
   }
 
   .selected:hover {
-    background: rgb(245, 245, 245);
-    border: 1.1px solid #000000;
+    background-color: var(--hover);
   }
 }
 
@@ -202,7 +212,7 @@ li {
 .ranking {
   font-family: 'Bungee spice', cursive;
   font-size: 2rem;
-  color: var(--first-orange);
+  color: var(--orange);
   margin-bottom: 2rem;
 }
 
@@ -214,10 +224,10 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid var(--second-dark-green);
+  border: 2px solid var(--green);
   height: 60px;
-  background: var(--first-orange);
-  color: var(--first-white);
+  background: var(--orange);
+  color: var(--player);
   font-size: 1.3rem;
   margin: 5px 0;
 }
@@ -231,7 +241,7 @@ li {
   position: relative;
   width: 56px;
   height: 56px;
-  background: var(--second-dark-green);
+  background: var(--green);
 }
 
 .ranking-player-points {
@@ -244,7 +254,7 @@ li {
   margin-right: 8px;
   height: 50px;
   width: 100px;
-  background: var(--second-dark-green);
+  background: var(--green);
 }
 
 @media (max-width: 500px) {
