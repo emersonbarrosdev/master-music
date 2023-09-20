@@ -1,20 +1,1694 @@
 {
   "questions": [
     {
-      "questionText": "../assets/songs/easy/U2 - One.mp3",
+      "questionText": "../assets/songs/master/ACDC - Back In Black.mp3",
       "options": [
         {
-          "text": "Skank"
+          "text": "AC/DC",
+          "correct": true
         },
         {
           "text": "Led Zeppelin"
         },
         {
-          "text": "U2",
+          "text": "Black Sabbath"
+        },
+        {
+          "text": "Jimi Hendrix"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Adema - Immortal.mp3",
+      "options": [
+        {
+          "text": "Metallica"
+        },
+        {
+          "text": "Adema",
           "correct": true
         },
         {
+          "text": "Nirvana"
+        },
+        {
+          "text": "Van Halen"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Aerosmith - Dude (Looks Like A Lady).mp3",
+      "options": [
+        {
+          "text": "The Who"
+        },
+        {
+          "text": "Guns N' Roses"
+        },
+        {
+          "text": "Aerosmith",
+          "correct": true
+        },
+        {
+          "text": "Kiss"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Aliados - Esperança.mp3",
+      "options": [
+        {
+          "text": "Terno Rei"
+        },
+        {
+          "text": "Selvagens"
+        },
+        {
+          "text": "Scalene"
+        },
+        {
+          "text": "Aliados",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Alice In Chains - Man in the Box.mp3",
+      "options": [
+        {
+          "text": "Alice In Chains",
+          "correct": true
+        },
+        {
+          "text": "Sex Pistols"
+        },
+        {
+          "text": "Queen"
+        },
+        {
+          "text": "Pink Floyd"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Army Of Me - Going Through Changes.mp3",
+      "options": [
+        {
+          "text": "Cream"
+        },
+        {
+          "text": "Army Of Me",
+          "correct": true
+        },
+        {
+          "text": "Ramones"
+        },
+        {
+          "text": "Ozzy Osbourne"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Ava Max - Kings & Queens.mp3",
+      "options": [
+        {
+          "text": "Annie Lennox"
+        },
+        {
+          "text": "Ava Max",
+          "correct": true
+        },
+        {
+          "text": "Lita Ford"
+        },
+        {
+          "text": "Dolores O’Riordan"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Avenged Sevenfold - So Far Away.mp3",
+      "options": [
+        {
+          "text": "Alice Cooper"
+        },
+        {
+          "text": "Cheap Trick"
+        },
+        {
+          "text": "Avenged Sevenfold",
+          "correct": true
+        },
+        {
+          "text": "The Clash"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Billy Squier - My Kinda Lover - Remastered 2010.mp3",
+      "options": [
+        {
+          "text": "Iggy Pop"
+        },
+        {
+          "text": "Rush"
+        },
+        {
+          "text": "Judas Priest"
+        },
+        {
+          "text": "Billy Squier",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Bite the Hand - Love.mp3",
+      "options": [
+        {
+          "text": "Bite the Hand",
+          "correct": true
+        },
+        {
+          "text": "Red Hot Chili Peppers"
+        },
+        {
+          "text": "Def Leppard"
+        },
+        {
+          "text": "The Doors"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Bobby Bazini - Under The Weight.mp3",
+      "options": [
+        {
+          "text": "Boston"
+        },
+        {
+          "text": "Bobby Bazini",
+          "correct": true
+        },
+        {
+          "text": "Joan Jett & the Blackhearts"
+        },
+        {
+          "text": "Steppenwolf"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Charlie Brown Jr. - Be Myself.mp3",
+      "options": [
+        {
+          "text": "Fresno"
+        },
+        {
+          "text": "CPM 22"
+        },
+        {
+          "text": "Charlie Brown Jr.",
+          "correct": true
+        },
+        {
+          "text": "Dead Fish"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Charlie Brown Jr. - Não Viva Em Vão.mp3",
+      "options": [
+        {
+          "text": "Blood Rain"
+        },
+        {
+          "text": "Ponto Nulo no Céu"
+        },
+        {
+          "text": "Jota Quest"
+        },
+        {
+          "text": "Charlie Brown Jr.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Charlie Brown Jr. - Tamo Ai Na Atividade.mp3",
+      "options": [
+        {
+          "text": "Charlie Brown Jr.",
+          "correct": true
+        },
+        {
+          "text": "BR47"
+        },
+        {
+          "text": "Indigo"
+        },
+        {
+          "text": "Nenhum de Nós"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Cidade Negra - A Sombra da Maldade.mp3",
+      "options": [
+        {
+          "text": "Nando Reis"
+        },
+        {
+          "text": "Cidade Negra",
+          "correct": true
+        },
+        {
+          "text": "O Rappa"
+        },
+        {
+          "text": "Seu Jorge"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/CPM 22 - Não Vá Embora.mp3",
+      "options": [
+        {
+          "text": "Cólera"
+        },
+        {
+          "text": "Ratos de Porão"
+        },
+        {
+          "text": "CPM 22",
+          "correct": true
+        },
+        {
+          "text": "Garotos Podres"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Cream - Sunshine Of Your Love.mp3",
+      "options": [
+        {
+          "text": "Jethro Tull"
+        },
+        {
+          "text": "Ministry"
+        },
+        {
+          "text": "Heart"
+        },
+        {
+          "text": "Cream",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Cyndi Lauper - Change of Heart.mp3",
+      "options": [
+        {
+          "text": "Cyndi Lauper",
+          "correct": true
+        },
+        {
+          "text": "Ratt"
+        },
+        {
+          "text": "Hole"
+        },
+        {
+          "text": "Marilyn Manson"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Danzig - Mother.mp3",
+      "options": [
+        {
+          "text": "Queensryche"
+        },
+        {
+          "text": "Danzig",
+          "correct": true
+        },
+        {
+          "text": "Green Day"
+        },
+        {
+          "text": "King's X"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/David Bowie - Magic Dance.mp3",
+      "options": [
+        {
+          "text": "King Crimson"
+        },
+        {
+          "text": "Rainbow"
+        },
+        {
+          "text": "David Bowie",
+          "correct": true
+        },
+        {
+          "text": "Tool"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/David Carbonara - Babylon.mp3",
+      "options": [
+        {
+          "text": "Black Crowes"
+        },
+        {
+          "text": "Whitesnake"
+        },
+        {
+          "text": "UFO"
+        },
+        {
+          "text": "David Carbonara",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Dead Fish - Você.mp3",
+      "options": [
+        {
+          "text": "Dead Fish",
+          "correct": true
+        },
+        {
+          "text": "Hangar"
+        },
+        {
+          "text": "Vênus"
+        },
+        {
+          "text": "Labirinto"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Deftones - Change (In the House of Flies).mp3",
+      "options": [
+        {
+          "text": "Lenny Kravitz"
+        },
+        {
+          "text": "Deftones",
+          "correct": true
+        },
+        {
+          "text": "Fugazi"
+        },
+        {
+          "text": "Mountain"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Detonautas Roque Clube - Olhos certos.mp3",
+      "options": [
+        {
+          "text": "Taurus"
+        },
+        {
+          "text": "Baranga"
+        },
+        {
+          "text": "Detonautas Roque Clube",
+          "correct": true
+        },
+        {
+          "text": "Shaman"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Disturbed - Stricken.mp3",
+      "options": [
+        {
+          "text": "Misfits"
+        },
+        {
+          "text": "Bad Brains"
+        },
+        {
+          "text": "Quiet Riot"
+        },
+        {
+          "text": "Disturbed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Dope - Another Day Goes By.mp3",
+      "options": [
+        {
+          "text": "Dope",
+          "correct": true
+        },
+        {
+          "text": "Beastie Boys"
+        },
+        {
+          "text": "Bee Gees"
+        },
+        {
+          "text": "Kiss"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Dope - Now Or Never.mp3",
+      "options": [
+        {
+          "text": "Marillion"
+        },
+        {
+          "text": "Dope",
+          "correct": true
+        },
+        {
+          "text": "No Doubt"
+        },
+        {
+          "text": "Nirvana"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Dry Kill Logic - Paper Tiger.mp3",
+      "options": [
+        {
+          "text": "Sex Pistols"
+        },
+        {
+          "text": "Radiohead"
+        },
+        {
+          "text": "Dry Kill Logic",
+          "correct": true
+        },
+        {
+          "text": "Oasis"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Edwyn Collins - A Girl Like You.mp3",
+      "options": [
+        {
+          "text": "Village People"
+        },
+        {
+          "text": "The Cure"
+        },
+        {
+          "text": "Simply Red"
+        },
+        {
+          "text": "Edwyn Collins",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Europe - The Final Countdown.mp3",
+      "options": [
+        {
+          "text": "Europe",
+          "correct": true
+        },
+        {
+          "text": "Travis"
+        },
+        {
+          "text": "Van Halen"
+        },
+        {
+          "text": "Dire Straits"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Flyleaf - Marionette.mp3",
+      "options": [
+        {
+          "text": "Four Tops"
+        },
+        {
+          "text": "Flyleaf",
+          "correct": true
+        },
+        {
+          "text": "Eurythmics"
+        },
+        {
+          "text": "Herman's Hermits"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Foghat - Slow Ride.mp3",
+      "options": [
+        {
+          "text": "Coldplay"
+        },
+        {
+          "text": "A-Ha"
+        },
+        {
+          "text": "Foghat",
+          "correct": true
+        },
+        {
+          "text": "Ace of Base"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Foreigner - I Want to Know What Love Is - 1999 Remaster.mp3",
+      "options": [
+        {
+          "text": "Backstreet Boys"
+        },
+        {
+          "text": "Creedence Clearwater Revival"
+        },
+        {
           "text": "Aerosmith"
+        },
+        {
+          "text": "Foreigner",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Forfun - Coisa Pouca.mp3",
+      "options": [
+        {
+          "text": "Forfun",
+          "correct": true
+        },
+        {
+          "text": "Blind Pigs"
+        },
+        {
+          "text": "Olho Seco"
+        },
+        {
+          "text": "Street Bulldogs"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Forfun - O Baile Não Vai Morrer.mp3",
+      "options": [
+        {
+          "text": "Hamen"
+        },
+        {
+          "text": "Forfun",
+          "correct": true
+        },
+        {
+          "text": "Raimundos"
+        },
+        {
+          "text": "Vulcano"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/George Thorogood & The Destroyers - Bad To The Bone.mp3",
+      "options": [
+        {
+          "text": "Duran Duran"
+        },
+        {
+          "text": "Garbage"
+        },
+        {
+          "text": "George Thorogood & The Destroyers",
+          "correct": true
+        },
+        {
+          "text": "Kansas"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Haley Reinhart, Casey Abrams - Time Of The Season.mp3",
+      "options": [
+        {
+          "text": "Pink"
+        },
+        {
+          "text": "Men at Work"
+        },
+        {
+          "text": "Koop"
+        },
+        {
+          "text": "Haley Reinhart",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Ill Niño - How Can I Live.mp3",
+      "options": [
+        {
+          "text": "Ill Niño",
+          "correct": true
+        },
+        {
+          "text": "Motörhead"
+        },
+        {
+          "text": "Pet Shop Boys"
+        },
+        {
+          "text": "R.E.M."
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Iron Maiden - Fear of the Dark - 2015 Remaster.mp3",
+      "options": [
+        {
+          "text": "Renaissance"
+        },
+        {
+          "text": "Iron Maiden",
+          "correct": true
+        },
+        {
+          "text": "Santana"
+        },
+        {
+          "text": "Snow Patrol"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Jeff Zavac, The Craetts - Hit The Road Jack.mp3",
+      "options": [
+        {
+          "text": "System of a Down"
+        },
+        {
+          "text": "The Byrds"
+        },
+        {
+          "text": "Jeff Zavac",
+          "correct": true
+        },
+        {
+          "text": "Deep Purple"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Journey - Separate Ways (Worlds Apart).mp3",
+      "options": [
+        {
+          "text": "Air Supply"
+        },
+        {
+          "text": "Backstreet Boys"
+        },
+        {
+          "text": "Black Sabbath"
+        },
+        {
+          "text": "Journey",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Kansas - Carry On Wayward Son.mp3",
+      "options": [
+        {
+          "text": "Kansas",
+          "correct": true
+        },
+        {
+          "text": "Abba"
+        },
+        {
+          "text": "Fleetwood Mac"
+        },
+        {
+          "text": "Genesis"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Kate Bush - Running Up That Hill (A Deal With God).mp3",
+      "options": [
+        {
+          "text": "Morcheeba"
+        },
+        {
+          "text": "Kate Bush",
+          "correct": true
+        },
+        {
+          "text": "Blondie"
+        },
+        {
+          "text": "No Doubt"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Kenny Loggins - Danger Zone - From Top Gun Original Soundtrack.mp3",
+      "options": [
+        {
+          "text": "Simon & Garfunkel"
+        },
+        {
+          "text": "Pink Floyd"
+        },
+        {
+          "text": "Kenny Loggins",
+          "correct": true
+        },
+        {
+          "text": "Pearl Jam"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Kings of Leon - Sex on Fire.mp3",
+      "options": [
+        {
+          "text": "The Animals"
+        },
+        {
+          "text": "Santana"
+        },
+        {
+          "text": "Wham"
+        },
+        {
+          "text": "Kings of Leon",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Korn - Did My Time.mp3",
+      "options": [
+        {
+          "text": "Korn",
+          "correct": true
+        },
+        {
+          "text": "Pink Martini"
+        },
+        {
+          "text": "Dido"
+        },
+        {
+          "text": "1917"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Korn - Word Up!.mp3",
+      "options": [
+        {
+          "text": "30 Seconds to Mars"
+        },
+        {
+          "text": "Korn",
+          "correct": true
+        },
+        {
+          "text": "Aeternus Odium"
+        },
+        {
+          "text": "N.M.A."
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Led Zeppelin - Immigrant Song - Remaster.mp3",
+      "options": [
+        {
+          "text": "Obituary"
+        },
+        {
+          "text": "Myth of a Life"
+        },
+        {
+          "text": "Led Zeppelin",
+          "correct": true
+        },
+        {
+          "text": "Paura"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/LetoDie - Vitória ou Valhalla.mp3",
+      "options": [
+        {
+          "text": "Tears Of Mankind"
+        },
+        {
+          "text": "Skyfire"
+        },
+        {
+          "text": "Rotten Pieces"
+        },
+        {
+          "text": "LetoDie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Limp Bizkit - My Way.mp3",
+      "options": [
+        {
+          "text": "Limp Bizkit",
+          "correct": true
+        },
+        {
+          "text": "Doom"
+        },
+        {
+          "text": "War Eternal"
+        },
+        {
+          "text": "Zanister"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Luxúria - Ódio.mp3",
+      "options": [
+        {
+          "text": "DNA"
+        },
+        {
+          "text": "Luxúria",
+          "correct": true
+        },
+        {
+          "text": "A Chave do Sol"
+        },
+        {
+          "text": "Executer"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Måneskin - I WANNA BE YOUR SLAVE.mp3",
+      "options": [
+        {
+          "text": "Divine Heresy"
+        },
+        {
+          "text": "Bullet for My Valentine"
+        },
+        {
+          "text": "Måneskin",
+          "correct": true
+        },
+        {
+          "text": "Bullet Bane"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Matchbox Twenty - Disease.mp3",
+      "options": [
+        {
+          "text": "Avril Lavigne"
+        },
+        {
+          "text": "Bullet for My Valentine"
+        },
+        {
+          "text": "B.B. King"
+        },
+        {
+          "text": "Matchbox Twenty",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Maximum the Hormone - Zetsubou Billy.mp3",
+      "options": [
+        {
+          "text": "Maximum the Hormone",
+          "correct": true
+        },
+        {
+          "text": "Asmodeus"
+        },
+        {
+          "text": "Fit For An Autopsy"
+        },
+        {
+          "text": "Hoth"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Metallica - St. Anger.mp3",
+      "options": [
+        {
+          "text": "Iced Earth"
+        },
+        {
+          "text": "Metallica",
+          "correct": true
+        },
+        {
+          "text": "Jack Slamer"
+        },
+        {
+          "text": "Iron Savior"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Michael Sembello - Maniac.mp3",
+      "options": [
+        {
+          "text": "Kappa Crucis"
+        },
+        {
+          "text": "Legion"
+        },
+        {
+          "text": "Michael Sembello",
+          "correct": true
+        },
+        {
+          "text": "Machine Head"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Mudvayne - Happy.mp3",
+      "options": [
+        {
+          "text": "Oath Of Cirion"
+        },
+        {
+          "text": "New Order"
+        },
+        {
+          "text": "MadDög"
+        },
+        {
+          "text": "Mudvayne",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Muse - Starlight.mp3",
+      "options": [
+        {
+          "text": "Muse",
+          "correct": true
+        },
+        {
+          "text": "Paradise In Flames"
+        },
+        {
+          "text": "Revenge"
+        },
+        {
+          "text": "Defcon One"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/My Darkest Days - Come Undone.mp3",
+      "options": [
+        {
+          "text": "Coram Lethe"
+        },
+        {
+          "text": "My Darkest Days",
+          "correct": true
+        },
+        {
+          "text": "Black Stone Cherry"
+        },
+        {
+          "text": "Astral Doors"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Nickelback - Far Away.mp3",
+      "options": [
+        {
+          "text": "Machescazo"
+        },
+        {
+          "text": "Korzus"
+        },
+        {
+          "text": "Nickelback",
+          "correct": true
+        },
+        {
+          "text": "Heart Attack"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/NX Zero - Só Rezo.mp3",
+      "options": [
+        {
+          "text": "Attomica"
+        },
+        {
+          "text": "Green Sleeves"
+        },
+        {
+          "text": "Rebaelliun"
+        },
+        {
+          "text": "NX Zero",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Oasis - Stop Crying Your Heart Out.mp3",
+      "options": [
+        {
+          "text": "Oasis",
+          "correct": true
+        },
+        {
+          "text": "Lux Aterna"
+        },
+        {
+          "text": "Manowar"
+        },
+        {
+          "text": "Naer Mataron"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Ozzy Osbourne - Crazy Train.mp3",
+      "options": [
+        {
+          "text": "Mythra"
+        },
+        {
+          "text": "Ozzy Osbourne",
+          "correct": true
+        },
+        {
+          "text": "Oligarquia"
+        },
+        {
+          "text": "Placebo"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Pantera - Walk.mp3",
+      "options": [
+        {
+          "text": "Ratt"
+        },
+        {
+          "text": "Sacrimoon"
+        },
+        {
+          "text": "Pantera",
+          "correct": true
+        },
+        {
+          "text": "Ram-Page"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Phantom Planet - California - Tchad Blake Mix.mp3",
+      "options": [
+        {
+          "text": "Scalpture"
+        },
+        {
+          "text": "Temple Of Void"
+        },
+        {
+          "text": "Samanttha"
+        },
+        {
+          "text": "Phantom Planet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Pink Floyd - Another Brick In The Wall, Pt. 2 - 2011 Remastered Version.mp3",
+      "options": [
+        {
+          "text": "Pink Floyd",
+          "correct": true
+        },
+        {
+          "text": "Uncovered For Revenge"
+        },
+        {
+          "text": "Tesla"
+        },
+        {
+          "text": "Titan Force"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Pitty - Máscara.mp3",
+      "options": [
+        {
+          "text": "Vampire"
+        },
+        {
+          "text": "Pitty",
+          "correct": true
+        },
+        {
+          "text": "Warvictims"
+        },
+        {
+          "text": "XFears"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Placebo - Every You Every Me.mp3",
+      "options": [
+        {
+          "text": "Evil Army"
+        },
+        {
+          "text": "Zanister"
+        },
+        {
+          "text": "Placebo",
+          "correct": true
+        },
+        {
+          "text": "Yellowtooth"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Ponto Nulo No Céu, Showlivre - Sob o Mesmo Sol - Ao Vivo.mp3",
+      "options": [
+        {
+          "text": "Brothers in Arms"
+        },
+        {
+          "text": "Crematory"
+        },
+        {
+          "text": "Dripping Decay"
+        },
+        {
+          "text": "Ponto Nulo No Céu",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Queen - We Are The Champions - Remastered 2011.mp3",
+      "options": [
+        {
+          "text": "Queen",
+          "correct": true
+        },
+        {
+          "text": "Body Count"
+        },
+        {
+          "text": "Attick Demons"
+        },
+        {
+          "text": "Ed Sheeran"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Queensrÿche - Silent Lucidity - Remastered 2003.mp3",
+      "options": [
+        {
+          "text": "Heavenside"
+        },
+        {
+          "text": "Queensrÿche",
+          "correct": true
+        },
+        {
+          "text": "Killer Be Killed"
+        },
+        {
+          "text": "Lacrimosa"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Ramones - Pet Sematary.mp3",
+      "options": [
+        {
+          "text": "Madkill"
+        },
+        {
+          "text": "Pain of Salvation"
+        },
+        {
+          "text": "Ramones",
+          "correct": true
+        },
+        {
+          "text": "Pretenders"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Redness, Teco Martins - É Bem Melhor.mp3",
+      "options": [
+        {
+          "text": "The Doors"
+        },
+        {
+          "text": "Sabaton"
+        },
+        {
+          "text": "Project K"
+        },
+        {
+          "text": "Redness",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Remy Zero - Save Me.mp3",
+      "options": [
+        {
+          "text": "Remy Zero",
+          "correct": true
+        },
+        {
+          "text": "The Drippers"
+        },
+        {
+          "text": "The Flame"
+        },
+        {
+          "text": "Valkyrie"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Scorpions - Rock 'n' Roll Band.mp3",
+      "options": [
+        {
+          "text": "Vampire"
+        },
+        {
+          "text": "Scorpions",
+          "correct": true
+        },
+        {
+          "text": "Uzziel"
+        },
+        {
+          "text": "Virgin's Vomit"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Slipknot - Before I Forget.mp3",
+      "options": [
+        {
+          "text": "Otep"
+        },
+        {
+          "text": "Pantera"
+        },
+        {
+          "text": "Slipknot",
+          "correct": true
+        },
+        {
+          "text": "Destroyers"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Slipknot - People = Shit.mp3",
+      "options": [
+        {
+          "text": "Midnight Scream"
+        },
+        {
+          "text": "Nocturnal Age Records"
+        },
+        {
+          "text": "Volkmort"
+        },
+        {
+          "text": "Slipknot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Spandau Ballet - True - Single Edit.mp3",
+      "options": [
+        {
+          "text": "Spandau Ballet",
+          "correct": true
+        },
+        {
+          "text": "Magnum"
+        },
+        {
+          "text": "Into the Dust"
+        },
+        {
+          "text": "Human Repugnance"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Stone Temple Pilots - Plush.mp3",
+      "options": [
+        {
+          "text": "Green Day"
+        },
+        {
+          "text": "Stone Temple Pilots",
+          "correct": true
+        },
+        {
+          "text": "Forbidden"
+        },
+        {
+          "text": "Dying Embrace"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Survivor - Burning Heart - From Rocky IV Soundtrack.mp3",
+      "options": [
+        {
+          "text": "Dusty Old Fingers"
+        },
+        {
+          "text": "Curriculum Mortis"
+        },
+        {
+          "text": "Survivor",
+          "correct": true
+        },
+        {
+          "text": "Crimson Dawn"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/System Of A Down - Chop Suey!.mp3",
+      "options": [
+        {
+          "text": "Bömber"
+        },
+        {
+          "text": "Anion Effect"
+        },
+        {
+          "text": "Blut aus Nord"
+        },
+        {
+          "text": "System Of A Down",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Tears For Fears - Shout.mp3",
+      "options": [
+        {
+          "text": "Tears For Fears",
+          "correct": true
+        },
+        {
+          "text": "Alchemiat"
+        },
+        {
+          "text": "God of Carnage"
+        },
+        {
+          "text": "Godsmack"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/The Bangles - Eternal Flame.mp3",
+      "options": [
+        {
+          "text": "Guilty View"
+        },
+        {
+          "text": "The Bangles",
+          "correct": true
+        },
+        {
+          "text": "Hargos"
+        },
+        {
+          "text": "Kaamos"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/The Beatles - Twist And Shout - Remastered.mp3",
+      "options": [
+        {
+          "text": "Of Spire & Throne"
+        },
+        {
+          "text": "Mass of Shit"
+        },
+        {
+          "text": "The Beatles",
+          "correct": true
+        },
+        {
+          "text": "Jungle Rot"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/The Beatles - While My Guitar Gently Weeps - Remastered 2009.mp3",
+      "options": [
+        {
+          "text": "Rain Fell Within"
+        },
+        {
+          "text": "Purity"
+        },
+        {
+          "text": "Opus Dead"
+        },
+        {
+          "text": "The Beatles",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/The Cult - Edie (Ciao Baby).mp3",
+      "options": [
+        {
+          "text": "The Cult",
+          "correct": true
+        },
+        {
+          "text": "The Cardigans"
+        },
+        {
+          "text": "The Clash"
+        },
+        {
+          "text": "The Anger"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/The Smashing Pumpkins - Today - 2011 Remaster.mp3",
+      "options": [
+        {
+          "text": "The Black Crowes"
+        },
+        {
+          "text": "The Smashing Pumpkins",
+          "correct": true
+        },
+        {
+          "text": "The Darkness"
+        },
+        {
+          "text": "The Color Red"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Thousand Foot Krutch - The Part That Hurts The Most (Is Me).mp3",
+      "options": [
+        {
+          "text": "Miraculous Mule"
+        },
+        {
+          "text": "Evergrey"
+        },
+        {
+          "text": "Thousand Foot Krutch",
+          "correct": true
+        },
+        {
+          "text": "Demons Damn"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Three Days Grace - I Hate Everything About You.mp3",
+      "options": [
+        {
+          "text": "Denied"
+        },
+        {
+          "text": "Cursed Slaughter"
+        },
+        {
+          "text": "Breakdown"
+        },
+        {
+          "text": "Three Days Grace",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Two Door Cinema Club - What You Know.mp3",
+      "options": [
+        {
+          "text": "Two Door Cinema Club",
+          "correct": true
+        },
+        {
+          "text": "Adema"
+        },
+        {
+          "text": "Evil Whiplash"
+        },
+        {
+          "text": "Liam Gallagher"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Van Halen - Jump - 2015 Remaster.mp3",
+      "options": [
+        {
+          "text": "Limp Bizkit"
+        },
+        {
+          "text": "Van Halen",
+          "correct": true
+        },
+        {
+          "text": "No Rest"
+        },
+        {
+          "text": "Pure Sweet Hell"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Velvet Revolver - Slither.mp3",
+      "options": [
+        {
+          "text": "Purification"
+        },
+        {
+          "text": "Sevendust"
+        },
+        {
+          "text": "Velvet Revolver",
+          "correct": true
+        },
+        {
+          "text": "Territory"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/Wiz Khalifa, Charlie Puth - See You Again (feat. Charlie Puth).mp3",
+      "options": [
+        {
+          "text": "Cannibal Corpse"
+        },
+        {
+          "text": "Tomb Of Love"
+        },
+        {
+          "text": "The Black Cold"
+        },
+        {
+          "text": "Wiz Khalifa",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/master/ZZ Top - La Grange - 2005 Remaster.mp3",
+      "options": [
+        {
+          "text": "ZZ Top",
+          "correct": true
+        },
+        {
+          "text": "Buried Dreams"
+        },
+        {
+          "text": "Atomic Bomb"
+        },
+        {
+          "text": "Repugnant Inebriation"
         }
       ]
     }
