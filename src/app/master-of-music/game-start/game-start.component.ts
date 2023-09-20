@@ -93,7 +93,7 @@ export class GameStartComponent implements OnInit {
         this.inCorrectAnswer++;
         this.resetCounter();
       }, 1000);
-      this.points -= 0;
+      this.points -= 1;
     }
     const playerName = localStorage.getItem('playerName');
     localStorage.setItem(`${playerName}_points`, this.points.toString());
@@ -125,7 +125,7 @@ export class GameStartComponent implements OnInit {
         if (this.counter === 0) {
           this.currentQuestion++;
           this.counter = 45;
-          this.points -= 0;
+          this.points -= 1;
         }
         this.questionTimeout();
       });

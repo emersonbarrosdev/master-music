@@ -1,20 +1,704 @@
 {
   "questions": [
     {
-      "questionText": "../assets/songs",
+      "questionText": "../assets/songs/hard/American Head Charge, Heacock - Ridicule.mp3",
       "options": [
         {
-          "text": "Skank"
-        },
-        {
-          "text": "Led Zeppelin"
-        },
-        {
-          "text": "U2",
+          "text": "American Head Charge",
           "correct": true
         },
         {
-          "text": "Aerosmith"
+          "text": "Atreyu"
+        },
+        {
+          "text": "Gojira"
+        },
+        {
+          "text": "Dragonforce"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Arctic Monkeys - R U Mine.mp3",
+      "options": [
+        {
+          "text": "Parkway Drive"
+        },
+        {
+          "text": "Arctic Monkeys",
+          "correct": true
+        },
+        {
+          "text": "In This Moment"
+        },
+        {
+          "text": "Ghost"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Audioslave - Show Me How to Live.mp3",
+      "options": [
+        {
+          "text": "Alter Bridge"
+        },
+        {
+          "text": "Lamb of God"
+        },
+        {
+          "text": "Audioslave",
+          "correct": true
+        },
+        {
+          "text": "Our Last Night"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Black Sabbath - Iron Man - 2012 - Remaster.mp3",
+      "options": [
+        {
+          "text": "Nightwish"
+        },
+        {
+          "text": "The Cult"
+        },
+        {
+          "text": "In Flames"
+        },
+        {
+          "text": "Black Sabbath",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/blink-182 - I Miss You.mp3",
+      "options": [
+        {
+          "text": "Blink-182",
+          "correct": true
+        },
+        {
+          "text": "Dio"
+        },
+        {
+          "text": "Killswitch Engage"
+        },
+        {
+          "text": "Rob Zombie"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Cage The Elephant - Ready To Let Go.mp3",
+      "options": [
+        {
+          "text": "Skid Row"
+        },
+        {
+          "text": "Cage The Elephant",
+          "correct": true
+        },
+        {
+          "text": "Asking Alexandria"
+        },
+        {
+          "text": "Bad Wolves"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Dope - You Spin Me Round (Like a Record).mp3",
+      "options": [
+        {
+          "text": "Bullet For My Valentine"
+        },
+        {
+          "text": "Faith No More"
+        },
+        {
+          "text": "Dope",
+          "correct": true
+        },
+        {
+          "text": "Megadeth"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Drowning Pool - Pity.mp3",
+      "options": [
+        {
+          "text": "I Prevail"
+        },
+        {
+          "text": "Poison"
+        },
+        {
+          "text": "Judas Priest"
+        },
+        {
+          "text": "Drowning Pool",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Eminem - Sing For The Moment.mp3",
+      "options": [
+        {
+          "text": "Eminem",
+          "correct": true
+        },
+        {
+          "text": "50 Cent"
+        },
+        {
+          "text": "Jay-Z"
+        },
+        {
+          "text": "Tupac Shakur"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Foo Fighters - My Hero.mp3",
+      "options": [
+        {
+          "text": "Godsmack"
+        },
+        {
+          "text": "Foo Fighters",
+          "correct": true
+        },
+        {
+          "text": "Theory of a Deadman"
+        },
+        {
+          "text": "Falling In Reverse"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Fresno, Lulu Santos - Já Faz Tanto Tempo (feat. Lulu Santos).mp3",
+      "options": [
+        {
+          "text": "Hurtmold"
+        },
+        {
+          "text": "Nação Zumbi"
+        },
+        {
+          "text": "Fresno",
+          "correct": true
+        },
+        {
+          "text": "Almah"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Gavin DeGraw - I Don't Want to Be.mp3",
+      "options": [
+        {
+          "text": "Motorhead"
+        },
+        {
+          "text": "Volbeat"
+        },
+        {
+          "text": "Stone Sour"
+        },
+        {
+          "text": "Gavin DeGraw",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Haddaway - What Is Love - 7 Mix.mp3",
+      "options": [
+        {
+          "text": "The Stooges"
+        },
+        {
+          "text": "Yardbirds"
+        },
+        {
+          "text": "MC5"
+        },
+        {
+          "text": "Haddaway",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Heart - If Looks Could Kill.mp3",
+      "options": [
+        {
+          "text": "Heart",
+          "correct": true
+        },
+        {
+          "text": "A Day to Remember"
+        },
+        {
+          "text": "Blue Oyster Cult"
+        },
+        {
+          "text": "Thin Lizzy"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Ill Niño Unframed.mp3",
+      "options": [
+        {
+          "text": "Breaking Benjamin"
+        },
+        {
+          "text": "Ill Niño",
+          "correct": true
+        },
+        {
+          "text": "Seether"
+        },
+        {
+          "text": "Shinedown"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Ira!, Samuel Rosa - Tarde Vazia (feat. Samuel Rosa) - Versão Acústica.mp3",
+      "options": [
+        {
+          "text": "Bacamarte"
+        },
+        {
+          "text": "O Teatro Mágico"
+        },
+        {
+          "text": "Ira!",
+          "correct": true
+        },
+        {
+          "text": "Ratos de Porão"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Jefferson Airplane - Somebody to Love.mp3",
+      "options": [
+        {
+          "text": "Ana Wilson"
+        },
+        {
+          "text": "Pati Smith"
+        },
+        {
+          "text": "Janis Joplin!"
+        },
+        {
+          "text": "Jefferson Airplane",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Justin Timberlake What Goes Around...-...Comes Around (Interlude).mp3",
+      "options": [
+        {
+          "text": "Justin Timberlake",
+          "correct": true
+        },
+        {
+          "text": "Motley Crue"
+        },
+        {
+          "text": "Skillet"
+        },
+        {
+          "text": "Rise Against"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/KISS - Detroit Rock City.mp3",
+      "options": [
+        {
+          "text": "Whitesnake"
+        },
+        {
+          "text": "Kiss",
+          "correct": true
+        },
+        {
+          "text": "Five Finger Death Punch"
+        },
+        {
+          "text": "Rammstein"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Marilyn Manson - Tourniquet - Album Version Extended Fade.mp3",
+      "options": [
+        {
+          "text": "Three Days Grace"
+        },
+        {
+          "text": "Bring Me the Horizon"
+        },
+        {
+          "text": "Marilyn Manson",
+          "correct": true
+        },
+        {
+          "text": "Avenged Sevenfold"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Mudvayne - Forget to Remember.mp3",
+      "options": [
+        {
+          "text": "Deep Purple"
+        },
+        {
+          "text": "Papa Roach"
+        },
+        {
+          "text": "Slipknot"
+        },
+        {
+          "text": "Mudvayne",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Muse - Hysteria.mp3",
+      "options": [
+        {
+          "text": "Muse",
+          "correct": true
+        },
+        {
+          "text": "Ozzy Osbourne"
+        },
+        {
+          "text": "Van Halen"
+        },
+        {
+          "text": "Pink Floyd"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/NEEDTOBREATHE - HAPPINESS.mp3",
+      "options": [
+        {
+          "text": "Disturbed"
+        },
+        {
+          "text": "NEEDTOBREATHE",
+          "correct": true
+        },
+        {
+          "text": "Scorpions"
+        },
+        {
+          "text": "Pearl Jam"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Nightwish - Nemo.mp3",
+      "options": [
+        {
+          "text": "Tina Turner"
+        },
+        {
+          "text": "Stevie Nicks"
+        },
+        {
+          "text": "Nightwish",
+          "correct": true
+        },
+        {
+          "text": "Debbie Harry"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/O Surto - A Cera.mp3",
+      "options": [
+        {
+          "text": "Cazuza"
+        },
+        {
+          "text": "Raul Seixas"
+        },
+        {
+          "text": "Os Mutantes"
+        },
+        {
+          "text": "O Surto",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Oasis - Wonderwall - Remastered.mp3",
+      "options": [
+        {
+          "text": "Oasis",
+          "correct": true
+        },
+        {
+          "text": "Mountain"
+        },
+        {
+          "text": "Primus"
+        },
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/P.O.D. - Alive - 2006 Remaster.mp3",
+      "options": [
+        {
+          "text": "Lenny Kravitz"
+        },
+        {
+          "text": "P.O.D.",
+          "correct": true
+        },
+        {
+          "text": "Black Crowes"
+        },
+        {
+          "text": "Misfits"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Papa Roach - Gravity.mp3",
+      "options": [
+        {
+          "text": "Rainbow"
+        },
+        {
+          "text": "Lita Ford"
+        },
+        {
+          "text": "Papa Roach",
+          "correct": true
+        },
+        {
+          "text": "Tool"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Pearl Jam - Even Flow.mp3",
+      "options": [
+        {
+          "text": "Whitesnake"
+        },
+        {
+          "text": "Foreigner"
+        },
+        {
+          "text": "King Crimson"
+        },
+        {
+          "text": "Pearl Jam",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Placebo - A Million Little Pieces.mp3",
+      "options": [
+        {
+          "text": "Placebo",
+          "correct": true
+        },
+        {
+          "text": "Queensryche"
+        },
+        {
+          "text": "Pixies"
+        },
+        {
+          "text": "Green Day"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Ponto Nulo no Céu - Peso da Verdade.mp3",
+      "options": [
+        {
+          "text": "Sarcófago"
+        },
+        {
+          "text": "Ponto Nulo no Céu",
+          "correct": true
+        },
+        {
+          "text": "Torture Squad"
+        },
+        {
+          "text": "Chakal"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Puddle Of Mudd - Blurry.mp3",
+      "options": [
+        {
+          "text": "Ratt"
+        },
+        {
+          "text": "Hole"
+        },
+        {
+          "text": "Puddle Of Mudd",
+          "correct": true
+        },
+        {
+          "text": "Spinal Tap"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Raimundos - Eu quero ver o oco.mp3",
+      "options": [
+        {
+          "text": "Mamonas Assassinas"
+        },
+        {
+          "text": "Lobão"
+        },
+        {
+          "text": "Zé Ramalho"
+        },
+        {
+          "text": "Raimundos",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Sandra - (I'll Never Be) Maria Magdalena - Single Verison.mp3",
+      "options": [
+        {
+          "text": "Sandra",
+          "correct": true
+        },
+        {
+          "text": "Joan Jett"
+        },
+        {
+          "text": "Amy Lee"
+        },
+        {
+          "text": "Tarja Turunen"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Slipknot - Purity.mp3",
+      "options": [
+        {
+          "text": "White Zombie"
+        },
+        {
+          "text": "Slipknot",
+          "correct": true
+        },
+        {
+          "text": "Megadeth"
+        },
+        {
+          "text": "Anthrax"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/System Of A Down - Aerials.mp3",
+      "options": [
+        {
+          "text": "Smashing Pumpkins"
+        },
+        {
+          "text": "Nine Inch Nails"
+        },
+        {
+          "text": "System Of A Down",
+          "correct": true
+        },
+        {
+          "text": "Pantera"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Tihuana - Renata.mp3",
+      "options": [
+        {
+          "text": "Raimundos"
+        },
+        {
+          "text": "Planet Hemp"
+        },
+        {
+          "text": "Nando Reis"
+        },
+        {
+          "text": "Tihuana",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/Tonight Alive - Just For Now.mp3",
+      "options": [
+        {
+          "text": "Tonight Alive",
+          "correct": true
+        },
+        {
+          "text": "Linda Ronstadt"
+        },
+        {
+          "text": "Graça Slick"
+        },
+        {
+          "text": "Pat Benatar"
+        }
+      ]
+    },
+    {
+      "questionText": "../assets/songs/hard/We Came As Romans, Caleb Shomo - Black Hole.mp3",
+      "options": [
+        {
+          "text": "Jane's Addiction"
+        },
+        {
+          "text": "We Came As Romans",
+          "correct": true
+        },
+        {
+          "text": "Frank Zappa"
+        },
+        {
+          "text": "Stone Temple Pilots"
         }
       ]
     }
