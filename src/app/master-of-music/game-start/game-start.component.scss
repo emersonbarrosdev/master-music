@@ -13,6 +13,7 @@
 }
 
 .player {
+  text-transform: uppercase;
   font-family: 'Geologica', sans-serif;
   border-radius: 5px;
   width: 400px;
@@ -21,11 +22,11 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 2px solid var(--green);
+  border: 2px solid var(--orange);
   height: 60px;
   padding: 0 20px;
-  background: var(--orange);
-  color: var(--player);
+  color: var(--orange);
+  background: var(--background);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -71,11 +72,11 @@
 .question {
   width: 400px;
   font-family: 'Geologica', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--green);
   margin: 1.3rem 0 0.5rem 0;
 }
 
@@ -98,7 +99,7 @@ li {
   .selected {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--green);;
     border-radius: 5px;
     height: 60px;
     display: flex;
@@ -106,9 +107,9 @@ li {
     text-align: start;
     justify-content: center;
     padding: 0 20px;
-    color: var(--text);
+    color: var(--green);
     background-color: var(--background);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
   }
 
   .selected:hover {
@@ -210,7 +211,7 @@ li {
 // ---- SCREEN FINISH ----
 
 .ranking {
-  font-family: 'Bungee spice', cursive;
+  font-family: 'Geologica', sans-serif;
   font-size: 2rem;
   color: var(--orange);
   margin-bottom: 2rem;
@@ -224,12 +225,13 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid var(--green);
+  border: 2px solid var(--orange);
   height: 60px;
-  background: var(--orange);
-  color: var(--player);
+  color: var(--orange);
+  background: var(--background);
   font-size: 1.3rem;
   margin: 5px 0;
+  text-transform: uppercase;
 }
 
 .square {

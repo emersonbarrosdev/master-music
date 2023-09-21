@@ -17,10 +17,10 @@ export class GameWelcomeComponent implements OnInit {
   private gameService: GameService;
 
   levels: { value: string, label: string }[] = [
-    { value: 'easy', label: 'Fácil' },
+    { value: 'easy', label: 'Easy' },
     { value: 'normal', label: 'Normal' },
-    { value: 'hard', label: 'Difícil' },
-    { value: 'master', label: 'Mestre' },
+    { value: 'hard', label: 'Hard' },
+    { value: 'expert', label: 'Expert' },
   ];
 
   constructor(

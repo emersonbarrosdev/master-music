@@ -17,24 +17,24 @@ body {
 }
 
 :root {
-  --orange: #ff5100;
-  --green: #05C200;
-  --player: #fff;
-  --border: #dddddd;
-  --background: #fff;
-  --hover: #f7f6f6;
-  --text: #161515;
+  --orange: #7C3E66;
+  // --green: #116A7B;
+  --green: #FF8882;
+  --hover: rgba(255, 134, 128, 0.2);
+  --background: #F2EBE9;
 }
 
 :root .dark-theme {
-  --text: #fff;
-  --player: #161515;
-  --border: #dddddd;
-  --background: #161515;
-  --hover: #777777;
+  --orange: #F2EBE9;
+  --hover: rgba(255, 255, 255, 0.85);
+  --background: #7C3E66;
 }
 
 .mat-mdc-select {
+  color: var(--green) !important;
+}
+
+.mat-mdc-form-field  {
   color: var(--orange) !important;
 }
 

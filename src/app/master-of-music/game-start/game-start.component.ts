@@ -16,7 +16,7 @@ export class GameStartComponent implements OnInit {
   questionList: any = [];
   currentQuestion: number = 0;
   points: number = 0;
-  counter: number = 45;
+  counter: number;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
   interval: any;
@@ -36,6 +36,7 @@ export class GameStartComponent implements OnInit {
     this.getAllQuestions();
     this.startCounter();
     this.updateTopPlayers();
+    this.counter = this.gameService.getTimer();
   }
 
   toggleAudio() {
@@ -69,6 +70,7 @@ export class GameStartComponent implements OnInit {
   }
 
   questionAnswer(currentQuantity: number, option: any) {
+    this.counter = this.gameService.getTimer();
     this.isSelected = false;
     if (currentQuantity === this.questionList.length) {
       this.interval = interval(1000)
@@ -100,7 +102,6 @@ export class GameStartComponent implements OnInit {
     this.updateTopPlayers();
   }
 
-
   updateTopPlayers() {
     const players: { name: string, points: number }[] = [];
     const existingPlayers = JSON.parse(localStorage.getItem('players') || '[]');
@@ -124,7 +125,7 @@ export class GameStartComponent implements OnInit {
         this.counter--;
         if (this.counter === 0) {
           this.currentQuestion++;
-          this.counter = 45;
+          this.counter = this.gameService.getTimer();
           this.points -= 1;
         }
         this.questionTimeout();
@@ -148,7 +149,7 @@ export class GameStartComponent implements OnInit {
 
   resetCounter() {
     this.stopCounter();
-    this.counter = 45;
+    this.counter;
     this.startCounter();
   }
 

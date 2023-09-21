@@ -18,6 +18,26 @@ export class GameService {
     return this.httpClient.get<any>(this.getApiSongs());
   }
 
+  getTimer(): number {
+    let counter = 0;
+    this.valueForm = this.getForm();
+    switch (this.valueForm.level) {
+      case 'easy':
+        counter = 45;
+        break;
+      case 'normal':
+        counter = 35;
+        break;
+      case 'hard':
+        counter = 25;
+        break;
+      case 'expert':
+        counter = 15;
+        break;
+    }
+    return counter;
+  }
+
   getApiSongs(): string {
     let API = '';
     this.valueForm = this.getForm();
@@ -31,7 +51,7 @@ export class GameService {
       case 'hard':
         API = '../../../assets/api/hard.json';
         break;
-      case 'master':
+      case 'expert':
         API = '../../../assets/api/master.json';
         break;
     }

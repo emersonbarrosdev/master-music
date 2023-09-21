@@ -15,8 +15,8 @@ export class IsCorrent {
       this.render.setStyle(this.el.nativeElement,'font-weight','500');
       this.render.setStyle(this.el.nativeElement,'border','1px solid #23903c');
     }else{
-      this.render.setStyle(this.el.nativeElement,'color','#a42834');
-      this.render.setStyle(this.el.nativeElement,'background','#f8d7da');
+      this.render.setStyle(this.el.nativeElement,'color','#ff0000');
+      this.render.setStyle(this.el.nativeElement,'background','#ff9898');
       this.render.setStyle(this.el.nativeElement,'font-weight','500');
       this.render.setStyle(this.el.nativeElement,'border','none');
       this.render.setStyle(this.el.nativeElement,'border','1px solid #a42834');
